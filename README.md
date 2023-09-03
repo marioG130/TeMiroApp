@@ -1,6 +1,7 @@
 # TeMiroApp
 
 Proyecto Integrador del Módulo "Programador de Aplicaciones Móviles"
+
 ISPC - TSDWAD - cohorte 2022
 
 ## Aplicación para dispositivos móbiles de la Óptica Temiro
