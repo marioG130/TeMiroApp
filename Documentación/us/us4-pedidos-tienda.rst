@@ -1,7 +1,7 @@
-6) PRUEBAS de VISION
+﻿4) PEDIDOS DE LA TIENDA
 ~~~~~~~~~~~~~~~~~~~~
 
-A continuación se describen *Historias de Usuario* referidas a la seccion de mis pedidos en la app. En la misma seccion el usuario podra tener seguimiento del historial de sus compras. Conocer la fecha, el importe y el estado de sus consumos. Esta seccion de la aplicacion solo estar disponible para clientes registrados en la optica.
+A continuación se describen *Historias de Usuario* referidas a la seccion de mis pedidos en la app. En la misma seccion el usuario podra tener seguimiento del historial de sus compras. Conocer la fecha, el importe y el estado de sus consumos. Esta seccion de la aplicacion solo estara disponible para clientes registrados en la optica.
 
 
 + **Como** usuario de la app **quiero** encontrar una seccion con mis pedidos **para** tener control de mis consumos.
