@@ -16,4 +16,4 @@ A continuación se describen Historias de Usuario referidas al catalogo de produ
 
 * **Como** usuario de la app **quiero** recibir una confirmación de pedido por correo electrónico **para** tener un registro de los detalles de mi compra y estar seguro de que se ha realizado con éxito.
 
-+ **Como** usuario de la app **quiero**ser redirigido a un formulario de consulta al seleccionar un servicio **para** proporcionar mis datos personales (nombre, dirección, correo electrónico, número de teléfono) y redactar mi consulta de manera conveniente.
++ **Como** usuario de la app **quiero** ser redirigido a un formulario de consulta al seleccionar un servicio **para** proporcionar mis datos personales (nombre, dirección, correo electrónico, número de teléfono) y redactar mi consulta de manera conveniente.
