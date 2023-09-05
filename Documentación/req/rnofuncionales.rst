@@ -54,4 +54,7 @@
     
     **10.2** Debe haber un plan de contingencia para la recuperación rápida en caso de fallos.
 
-* .
+**11. Accesible e Inclusivo:**
+
+    **11.1** La aplicación debe tener un diseño apto para todas las personas, independientemente de sus capacidades (auditivas, de visión, del habla o cognitivas). Por lo cual, se piensa en garantizar una buena experiencia de su uso, incluyendo a las minorías.
+
