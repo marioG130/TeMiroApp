@@ -7,7 +7,7 @@ Aquí se especificarán las Historias de Usuario referidas a las páginas princi
 HOME
 ~~~~
 
-+ *US1.1:* **Como** dueño **quiero** que el HOME contenga un índice de todas las secciones de la misma, como: Sacar turno | Ejercicio de visión | Pruebas de visión | Catálogo | Estado de Compra |Contacto. **Para** que las personas tengas un fácil acceso a todas las herramientas otorgadas por esta app. Donde el usuario, rápidamente encuentre lo que busque, además de hacerlo sentir cómodo y convertirlo en un habitué dentro de ella.
++ *US1.1:* **Como** dueño **quiero** que el HOME contenga un índice de todas las secciones de la misma, como: Sacar turno | Ejercicio de visión | Pruebas de visión | Catálogo | Estado de Compra | Contacto. **Para** que las personas tengas un fácil acceso a todas las herramientas otorgadas por esta app. Donde el usuario, rápidamente encuentre lo que busque, además de hacerlo sentir cómodo y convertirlo en un habitué dentro de ella.
 
 CONTACTO
 ~~~~~~~~
