@@ -1,4 +1,7 @@
 
+2) Manejo de Usuarios
+~~~~~~~~~~~~~~~~~~~~~
+
   * **US2.1** **COMO:** usuario **QUIERO:** registrarme en el sistema **PARA:** acceder a las funcionalidades de la aplicación.
   
   * **US2.2** **COMO:** usuario **QUIERO:** ingresar al sistema **PARA:** acceder a las funcionalidades de la aplicación.

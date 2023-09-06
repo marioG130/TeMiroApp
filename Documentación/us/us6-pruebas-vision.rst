@@ -1,5 +1,5 @@
 
-6) PRUEBAS de VISION
+6) Pruebas de Visión
 ~~~~~~~~~~~~~~~~~~~~
 
 A continuación se describen *Historias de Usuario* referidas a la pruebas de visión que un usuario podrá realizar en la aplicación móbil. Las mismas se refieren a tres funcionalidades diferentes que presentará la app, por un lado la posibilidad de determinar y medir si una persona es *daltónica*, por otro lado la de medir la agudeza visual (capacidad de hacer foco y ver objetos pequeños), y finalmente la posibilidad de medir la distancia pupilar. Algunas de estas funcionalidades estarán disponibles para el público en general, mientras que otras lo estarán solamente para los clientes registrados de la ótica.

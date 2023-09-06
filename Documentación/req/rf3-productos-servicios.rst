@@ -1,4 +1,7 @@
-               Productos
+
+3a) Productos
+~~~~~~~~~~~~~
+               
 **1. Navegación y Búsqueda de Productos**
     
    **1.1** Los usuarios deben poder buscar productos por nombre, categoría y palabras clave.
@@ -40,7 +43,10 @@
    
    **6.2** El sistema debe tener medidas de seguridad para prevenir ataques.
 
-                                                        Servicios
+   
+3b) Servicios
+~~~~~~~~~~~~~
+                                                        
 **1. Gestión de Subcategorías:**
 
    **1.1** El administrador debe poder agregar nuevas subcategorías, como "Taller de Montaje" y "Seguro de Rotura de Lentes".
@@ -86,4 +92,4 @@
    **6.2** Debe mantener registros de actividad y consultas para cumplir con las leyes y regulaciones locales.
 
 
-* .
+

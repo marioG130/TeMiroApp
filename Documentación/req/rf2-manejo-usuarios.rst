@@ -1,4 +1,7 @@
 
+2) Manejo de Usuarios
+~~~~~~~~~~~~~~~~~~~~~
+
   * El sistema permitirá que un usuario inicie sesión con su nombre de usuario y contraseña"
   * El sistema permitirá el registro de un nuevo usuario ingresando email, nombre usuario y contraseña y aceptando los términos y condiciones.
   * El campo nombre acepta caracteres alfabéticos únicamente.

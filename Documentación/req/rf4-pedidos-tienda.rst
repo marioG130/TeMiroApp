@@ -1,5 +1,6 @@
-4) PEDIDOS DE LA TIENDA
-~~~~~~~~~~~~~~~~~~~~
+
+4) Pedidos de la Tienda
+~~~~~~~~~~~~~~~~~~~~~~~
 
 A continuación se describen los *Requisitos Funcionales* referidos a la seccion de "Mis Pedidos" de la aplicacion movil.
 

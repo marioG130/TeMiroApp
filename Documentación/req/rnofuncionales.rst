@@ -1,3 +1,4 @@
+
 **1. Rendimiento:**
 
    **1.1** La aplicación debe ser capaz de manejar al menos 10 usuarios concurrentes sin degradación del rendimiento.
@@ -28,7 +29,7 @@
    
 **6. Compatibilidad:**
 
-**6.1** Debe ser compatible con dispositivos móviles y tener un diseño responsivo.
+**6.1** Debe ser compatible con dispositivos móviles con sistema operativo Android y tener un diseño responsivo.
 
 **7. Mantenibilidad:**
 
@@ -38,7 +39,7 @@
 
 **8. Legal y Regulatorio:**
 
-   **8.1** La aplicación debe cumplir con las regulaciones de privacidad de datos, como el Reglamento General de Protección de Datos (GDPR) si es aplicable.
+   **8.1** La aplicación debe cumplir con las regulaciones de privacidad de datos, como la "Ley de Protección de Datos Personales de Argentina" si es aplicable.
    
    **8.2** Debe mantener registros de actividad y transacciones para cumplir con las leyes y regulaciones locales.
 
