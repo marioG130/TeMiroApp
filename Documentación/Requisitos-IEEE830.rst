@@ -178,16 +178,6 @@ Los requisitos funcionales se clasifican en siete grupos, de forma de agrupar lo
 
 .. include:: req/rf2-manejo-usuarios.rst
 
-A continuación se detallan los requisitos funcionales del manejo de usuario: 
-
-  * El sistema permitirá que un usuario inicie sesión con su nombre de usuario y contraseña"
-  * El sistema permitirá el registro de un nuevo usuario ingresando email, nombre usuario y contraseña y aceptando los términos y condiciones.
-  * El campo nombre acepta caracteres alfabéticos únicamente.
-  * El sistema permitirá cambiar los datos del usuario incluyendo, nombre de usuario, contraseña, email.
-  * El sistema almacenará los datos de todos los usuarios en una base de datos.
-  * El sistema almacenara todas las transacciones realizadas por el usuario en la base de datos.
-  *El sistema controlará el acceso y lo permitirá solamente a usuarios autorizados. Los usuarios deben ingresar al sistema con un nombre de usuario y contraseña.
-
 .. include:: req/rf3-productos-servicios.rst
 
 .. include:: req/rf4-pedidos-tienda.rst
@@ -208,7 +198,4 @@ A continuación se detallan los requisitos funcionales del manejo de usuario:
 
 .. include:: req/rnofuncionales.rst
 
-.. include:: req/rf2-manejo-usuarios.rst
-
- * El sistema no deberá tardar más de 5 minutos en iniciar sesión.
 
