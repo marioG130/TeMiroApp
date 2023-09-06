@@ -12,4 +12,4 @@ HOME
 CONTACTO
 ~~~~~~~~
 
-+ *US1.2:* **Como** dueño de la app **quiero** un área de CONTANCTO donde las personas que tengan alguna duda en particular puedan encontrar y usar una mensajería exclusiva de la óptica. **Para** que los interesados puedan contactarse de forma simple, rápida y eficiente con nosotros. 
++ *US1.2:* **Como** dueño de la app **quiero** un área de CONTACTO donde las personas que tengan alguna duda en particular puedan encontrar y usar una mensajería exclusiva de la óptica. **Para** que los interesados puedan contactarse de forma simple, rápida y eficiente con nosotros. 
