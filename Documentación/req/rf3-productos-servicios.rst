@@ -50,8 +50,11 @@
 **3. Informacion Sobre Servicios Oftalmologicos (Formulario de Consulta):**  
    
    **3.1** Cuando un usuario selecciona "Informacion Sobre Servicios Oftalmologicos", el sistema debe mostrar informacion detallada del mismo y dar la posibilidad de llenar un formulario de consulta.
+
    **3.2** El formulario de consulta debe solicitar detalles sobre los lentes y datos personales del usuario para la contratación del seguro.
+
    **3.3** Los usuarios deben poder enviar el formulario de consulta y recibir una confirmación de envío.
+
 **4. Gestión de Consultas (para el administrador):**
 
    **4.1** El administrador debe recibir las consultas enviadas por usuarios que solicitan montaje, contratan seguros o soliciten informacion sobre los servicios de oftalmologia.
