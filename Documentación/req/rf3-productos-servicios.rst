@@ -1,3 +1,7 @@
+
+3a) Productos
+~~~~~~~~~~~~~
+
 **1. Navegación y Búsqueda de Productos**
     
    **1.1** Los usuarios deben poder navegar por categorías de productos.
@@ -15,7 +19,10 @@
     
    **3.1** El sistema debe tener medidas de seguridad para prevenir ataques.
 
-                                                        Servicios
+3b) Servicios
+~~~~~~~~~~~~~
+
+
 **1. Gestión de Subcategorías:**
 
    **1.1** El administrador debe poder agregar nuevas subcategorías, como ("Taller de Montaje", "Seguro de Rotura de Lentes" y "información sobre los servicios de oftalmología" ).
