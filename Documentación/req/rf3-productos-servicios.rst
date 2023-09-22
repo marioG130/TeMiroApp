@@ -1,5 +1,5 @@
 
-3a) Productos
+RF3-a) Productos
 ~~~~~~~~~~~~~
 
 **1. Navegación y Búsqueda de Productos**
@@ -19,7 +19,7 @@
     
    **3.1** El sistema debe tener medidas de seguridad para prevenir ataques.
 
-3b) Servicios
+RF3-b) Servicios
 ~~~~~~~~~~~~~
 
 
