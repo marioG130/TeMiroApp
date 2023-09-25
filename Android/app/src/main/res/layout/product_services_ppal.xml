@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.product.ProductServicesPpalFragment"
-    >
+    android:backgroundTint="@color/buttonColor"
+    tools:context=".ui.product.ProductServicesPpalFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -20,8 +20,8 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="222dp"
             android:layout_marginEnd="46dp"
-            android:text="Productos"
-            app:iconTint="#BAB5B5" />
+            android:backgroundTint="@color/buttonColor"
+            android:text="Productos" />
 
         <Button
             android:id="@+id/btn2"
@@ -32,7 +32,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="60dp"
             android:layout_marginEnd="46dp"
-            android:text="Servicios"
-            app:iconTint="#B8B6B6" />
+            android:backgroundTint="@color/buttonColor"
+            android:text="Servicios" />
     </RelativeLayout>
 </FrameLayout>

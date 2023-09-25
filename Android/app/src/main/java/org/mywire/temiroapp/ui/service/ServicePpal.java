@@ -1,5 +1,7 @@
 package org.mywire.temiroapp.ui.service;
 
+import static androidx.navigation.ViewKt.findNavController;
+
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import org.mywire.temiroapp.R;
 
@@ -60,7 +63,33 @@ public class ServicePpal extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.service_ppal, container, false);
+        View vista = inflater.inflate(R.layout.service_ppal, container, false);
+        Button buttonCategoria1 = vista.findViewById(R.id.buttonCategoria1);
+        Button buttonCategoria2 = vista.findViewById(R.id.buttonCategoria2);
+        Button buttonCategoria3 = vista.findViewById(R.id.buttonCategoria3);
+
+        buttonCategoria1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view) .navigate(R.id.action_servicePpal_to_service_descrip_taller);
+            }
+        });
+
+        buttonCategoria2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view).navigate(R.id.action_servicePpal_to_service_descrip_seguro);
+            }
+        });
+
+        buttonCategoria3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view) .navigate(R.id.action_servicePpal_to_service_descrip_consulta_oftal);
+            }
+        });
+
+
+        return vista;
     }
 }

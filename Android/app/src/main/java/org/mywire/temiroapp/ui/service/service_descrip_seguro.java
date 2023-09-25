@@ -1,12 +1,17 @@
 package org.mywire.temiroapp.ui.service;
 
+import static androidx.navigation.ActivityKt.findNavController;
+
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.ViewKt;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import org.mywire.temiroapp.R;
 
@@ -60,7 +65,15 @@ public class service_descrip_seguro extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_service_descrip_seguro, container, false);
+        View vista = inflater.inflate(R.layout.service_descrip_seguro, container, false);
+        Button BtnConsulta1 = vista.findViewById(R.id.btnConsulta1);
+
+        BtnConsulta1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ViewKt.findNavController(view) .navigate(R.id.action_service_descrip_seguro_to_service_Formu_Consulta);
+            }
+        });
+            return vista;
     }
 }

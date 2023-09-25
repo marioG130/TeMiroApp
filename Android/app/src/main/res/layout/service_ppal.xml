@@ -30,7 +30,7 @@
                 android:id="@+id/buttonCategoria1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#16CAF0"
+                android:backgroundTint="@color/buttonColor"
                 android:text="Taller De Montaje" />
         </LinearLayout>
 
@@ -52,7 +52,7 @@
                 android:id="@+id/buttonCategoria2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#16CAF0"
+                android:backgroundTint="@color/buttonColor"
                 android:text="Seguro Rotura De Cristal" />
         </LinearLayout>
 
@@ -74,7 +74,7 @@
                 android:id="@+id/buttonCategoria3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#16CAF0"
+                android:backgroundTint="@color/buttonColor"
                 android:text="Consultas Oftalmologicas" />
         </LinearLayout>
     </LinearLayout>

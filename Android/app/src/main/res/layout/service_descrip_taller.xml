@@ -24,11 +24,12 @@
 
     <!-- Botón "Formulario de Consulta" -->
     <Button
+        android:id="@+id/btnConsulta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Formulario de Consulta"
-        android:id="@+id/btnConsulta"
         android:layout_gravity="center"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Formulario de Consulta" />
 
 </LinearLayout>

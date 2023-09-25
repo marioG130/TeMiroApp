@@ -60,9 +60,10 @@
 
 
     <Button
+        android:id="@+id/btnEnviar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/btnEnviar" />
+        android:backgroundTint="@color/buttonColor"
+        android:text="Enviar" />
 
 </LinearLayout>
