@@ -6,14 +6,152 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragmentContainerView"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="409dp"
-        android:layout_height="657dp"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/product_services_graph"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/iconoUsuario"
+        android:layout_width="46dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="289dp"
+        android:layout_marginRight="289dp"
+        android:src="@drawable/usuario"
+        app:layout_constraintEnd_toEndOf="@+id/logoMarca"
+        app:layout_constraintTop_toTopOf="@+id/logoMarca"
+        tools:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textoBienvenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginBottom="671dp"
+        android:text="BIENVENIDO"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoMarca"
+        android:layout_width="323dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="477dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/botonTurno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textoQueDeseasHacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="198dp"
+        android:layout_marginBottom="29dp"
+        android:text="¿Qué deseas hacer?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/logoMarca"
+        app:layout_constraintEnd_toStartOf="@+id/logoMarca"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/logoMarca"
+        app:layout_constraintTop_toTopOf="@+id/logoMarca" />
+
+    <Button
+        android:id="@+id/botonTurno"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="254dp"
+        android:backgroundTint="#16CAF0"
+        android:text="SACAR TURNO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonPruebas"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="#16CAF0"
+        android:text="PRUEBAS DE VISIÓN"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonEjercicios"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="386dp"
+        android:backgroundTint="#16CAF0"
+        android:text="EJERCICIOS DE VISIÓN"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnVerCatalogo"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="452dp"
+        android:backgroundTint="#16CAF0"
+        android:text="VER CATÁLOGO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonEstadoDeCompra"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="518dp"
+        android:backgroundTint="#16CAF0"
+        android:text="ESTADO DE COMPRA"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botonContacto"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="584dp"
+        android:backgroundTint="#16CAF0"
+        android:text="CONTACTO"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iconoHome"
+        android:layout_width="45dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="651dp"
+        android:src="@drawable/home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/home" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

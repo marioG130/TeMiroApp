@@ -70,7 +70,7 @@ public class ProductServicesPpalFragment extends Fragment {
         btnIrAProducto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findNavController(view) .navigate(R.id.action_productServicesPpalFragment_to_productView);
+                findNavController(view) .navigate(R.id.action_productServicesPpalFragment_to_productViewFragment);
             }
         });
 

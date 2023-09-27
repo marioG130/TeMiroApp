@@ -11,7 +11,7 @@
         android:label="fragment_product_services_ppal"
         tools:layout="@layout/product_services_ppal" >
         <action
-            android:id="@+id/action_productServicesPpalFragment_to_productView"
+            android:id="@+id/action_productServicesPpalFragment_to_productViewFragment"
             app:destination="@id/productView" />
         <action
             android:id="@+id/action_productServicesPpalFragment_to_servicePpal"
@@ -69,4 +69,11 @@
         android:name="org.mywire.temiroapp.ui.service.Service_Formu_Consulta"
         android:label="fragment_service__formu__consulta"
         tools:layout="@layout/service__formu__consulta" />
+    <fragment android:id="@+id/MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_MainActivity_to_productServicesPpalFragment"
+            app:destination="@id/productServicesPpalFragment" />
+    </fragment>
 </navigation>
