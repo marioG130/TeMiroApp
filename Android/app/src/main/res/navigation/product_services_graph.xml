@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_sevices_graph"
+    app:startDestination="@id/productServicesPpalFragment">
+
+    <fragment
+        android:id="@+id/productServicesPpalFragment"
+        android:name="org.mywire.temiroapp.ui.product.ProductServicesPpalFragment"
+        android:label="fragment_product_services_ppal"
+        tools:layout="@layout/product_services_ppal" >
+        <action
+            android:id="@+id/action_productServicesPpalFragment_to_productViewFragment"
+            app:destination="@id/productView" />
+        <action
+            android:id="@+id/action_productServicesPpalFragment_to_servicePpal"
+            app:destination="@id/servicePpal" />
+    </fragment>
+    <fragment
+        android:id="@+id/productView"
+        android:name="org.mywire.temiroapp.ui.product.ProductView"
+        android:label="fragment_product_view"
+        tools:layout="@layout/product_ppal" />
+    <fragment
+        android:id="@+id/servicePpal"
+        android:name="org.mywire.temiroapp.ui.service.ServicePpal"
+        android:label="fragment_service_ppal"
+        tools:layout="@layout/service_ppal" >
+        <action
+            android:id="@+id/action_servicePpal_to_service_descrip_taller"
+            app:destination="@id/service_descrip_taller" />
+        <action
+            android:id="@+id/action_servicePpal_to_service_descrip_seguro"
+            app:destination="@id/service_descrip_seguro" />
+        <action
+            android:id="@+id/action_servicePpal_to_service_descrip_consulta_oftal"
+            app:destination="@id/service_descrip_consulta_oftal" />
+    </fragment>
+    <fragment
+        android:id="@+id/service_descrip_taller"
+        android:name="org.mywire.temiroapp.ui.service.Service_descrip_taller"
+        android:label="fragment_service_descrip_taller"
+        tools:layout="@layout/service_descrip_taller" >
+        <action
+            android:id="@+id/action_service_descrip_taller_to_service_Formu_Consulta"
+            app:destination="@id/service_Formu_Consulta" />
+    </fragment>
+    <fragment
+        android:id="@+id/service_descrip_seguro"
+        android:name="org.mywire.temiroapp.ui.service.service_descrip_seguro"
+        android:label="fragment_service_descrip_seguro"
+        tools:layout="@layout/service_descrip_seguro" >
+        <action
+            android:id="@+id/action_service_descrip_seguro_to_service_Formu_Consulta"
+            app:destination="@id/service_Formu_Consulta" />
+    </fragment>
+    <fragment
+        android:id="@+id/service_descrip_consulta_oftal"
+        android:name="org.mywire.temiroapp.ui.service.Service_descrip_consulta_oftal"
+        android:label="fragment_service_descrip_consulta_oftal"
+        tools:layout="@layout/service_descrip_consulta_oftal" >
+        <action
+            android:id="@+id/action_service_descrip_consulta_oftal_to_service_Formu_Consulta"
+            app:destination="@id/service_Formu_Consulta" />
+    </fragment>
+    <fragment
+        android:id="@+id/service_Formu_Consulta"
+        android:name="org.mywire.temiroapp.ui.service.Service_Formu_Consulta"
+        android:label="fragment_service__formu__consulta"
+        tools:layout="@layout/service__formu__consulta" />
+    <fragment android:id="@+id/MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main">
+        <action
+            android:id="@+id/action_MainActivity_to_productServicesPpalFragment"
+            app:destination="@id/productServicesPpalFragment" />
+    </fragment>
+</navigation>
