@@ -13,7 +13,7 @@
 
         <Button
             android:id="@+id/btnIrAProducto"
-            style="@style/Widget.AppCompat.Button.Small"
+            style="@style/Widget.Material3.Button"
             android:layout_width="320dp"
             android:layout_height="80dp"
             android:layout_alignParentTop="true"
@@ -21,11 +21,14 @@
             android:layout_marginTop="222dp"
             android:layout_marginEnd="46dp"
             android:backgroundTint="@color/buttonColor"
-            android:text="Productos" />
+            android:foregroundTintMode="add"
+            android:text="Productos"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:iconTint="@color/buttonColor" />
 
         <Button
             android:id="@+id/btn2"
-            style="@style/Widget.AppCompat.Button.Small"
+            style="@style/Widget.Material3.Button"
             android:layout_width="319dp"
             android:layout_height="75dp"
             android:layout_below="@+id/btnIrAProducto"
@@ -33,6 +36,7 @@
             android:layout_marginTop="60dp"
             android:layout_marginEnd="46dp"
             android:backgroundTint="@color/buttonColor"
-            android:text="Servicios" />
+            android:text="Servicios"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </RelativeLayout>
 </FrameLayout>
