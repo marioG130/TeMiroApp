@@ -1,11 +1,9 @@
 package org.mywire.temiroapp.ui.store;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
 
@@ -20,7 +18,5 @@ public class storeActivity extends AppCompatActivity {
     public void Volver_store(View view){
         Intent volver_store = new Intent(this, MainActivity.class);
         startActivity(volver_store);
-
-
     }
 }

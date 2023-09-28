@@ -1,10 +1,8 @@
 package org.mywire.temiroapp;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.navigation.ViewKt;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
