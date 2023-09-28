@@ -38,5 +38,7 @@
             android:backgroundTint="@color/buttonColor"
             android:text="Servicios"
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
     </RelativeLayout>
+
 </FrameLayout>

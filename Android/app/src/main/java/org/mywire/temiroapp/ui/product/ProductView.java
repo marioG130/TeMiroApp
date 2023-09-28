@@ -1,9 +1,7 @@
 package org.mywire.temiroapp.ui.product;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,15 +57,12 @@ public class ProductView extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.product_ppal, container, false);
 
         WebView webView = rootView.findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
-
-
         webView.getSettings().setLoadWithOverviewMode(true);
         webView.getSettings().setUseWideViewPort(true);
         webView.loadUrl("http://temiro.mywire.org/productos");

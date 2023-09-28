@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_nav_graph"
+    app:startDestination="@id/menuBotones">
+
+    <fragment
+        android:id="@+id/menuBotones"
+        android:name="org.mywire.temiroapp.ui.test.MenuBotones"
+        android:label="test_frag_menu_botones"
+        tools:layout="@layout/test_frag_menu_botones" >
+        <action
+            android:id="@+id/action_menuBotones_to_fragNoImplementado"
+            app:destination="@id/fragNoImplementado" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragNoImplementado"
+        android:name="org.mywire.temiroapp.ui.main.FragNoImplementado"
+        android:label="main_frag_noimplementado"
+        tools:layout="@layout/main_frag_noimplementado" />
+
+</navigation>

@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/product_sevices_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/productServicesPpalFragment" >
 
     <fragment
         android:id="@+id/productServicesPpalFragment"
         android:name="org.mywire.temiroapp.ui.product.ProductServicesPpalFragment"
         android:label="fragment_product_services_ppal"
-        tools:layout="@layout/product_services_ppal" >
+        tools:layout="@layout/product_services_frag" >
         <action
             android:id="@+id/action_productServicesPpalFragment_to_productView"
             app:destination="@id/productView" />
@@ -69,13 +69,4 @@
         android:name="org.mywire.temiroapp.ui.service.Service_Formu_Consulta"
         android:label="fragment_service__formu__consulta"
         tools:layout="@layout/service__formu__consulta" />
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="org.mywire.temiroapp.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/home_principal" >
-        <action
-            android:id="@+id/action_homeFragment_to_productServicesPpalFragment"
-            app:destination="@id/productServicesPpalFragment" />
-    </fragment>
 </navigation>

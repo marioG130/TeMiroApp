@@ -6,17 +6,11 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-
-
-
-
-
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        tools:context=".ui.store.storeActivity">
+        tools:context=".ui.store.StoreActivity">
 
         <ImageView
             android:id="@+id/imageView"
@@ -26,7 +20,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/marcaoptica" />
+            app:srcCompat="@drawable/main_logo" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -42,13 +36,13 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView">
 
             <Button
-                android:id="@+id/button_pedidos"
+                android:id="@+id/botonVolverF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:backgroundTint="@color/buttonColor"
                 android:insetBottom="4dp"
-                android:onClick="Volver_store"
+                android:onClick="volverStore"
                 android:text="Volver"
                 android:textColor="@color/white"
                 app:iconPadding="8dp"
@@ -96,7 +90,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/lentesdecerca1" />
+                    app:srcCompat="@drawable/store_lentesdecerca1" />
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -151,7 +145,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/gafasdeportivas1" />
+                    app:srcCompat="@drawable/store_gafasdeportivas1" />
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -207,7 +201,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/gafasnatacion" />
+                    app:srcCompat="@drawable/store_gafasnatacion" />
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -262,7 +256,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/lentedesol1" />
+                    app:srcCompat="@drawable/store_lentedesol1" />
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -317,7 +311,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/gafasproteccion" />
+                    app:srcCompat="@drawable/store_gafasproteccion" />
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -372,7 +366,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/lentesmultifocal" />
+                    app:srcCompat="@drawable/store_lentesmultifocal" />
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -427,7 +421,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/lentesdeninos" />
+                    app:srcCompat="@drawable/store_lentesdeninos" />
 
                 <LinearLayout
                     android:layout_width="236dp"
