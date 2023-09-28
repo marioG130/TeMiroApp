@@ -1,26 +1,23 @@
-package org.mywire.temiroapp.ui.store;
+package org.mywire.temiroapp.ui.main;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
 
-public class storeActivity extends AppCompatActivity {
+public class ActivNoImplementado extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.store_activity);
+        setContentView(R.layout.main_activ_noimplementado);
     }
 
-    public void Volver_store(View view){
-        Intent volver_store = new Intent(this, MainActivity.class);
-        startActivity(volver_store);
-
-
+    public void botonVolverAClick(View view) {
+        Intent act = new Intent(this, MainActivity.class);
+        startActivity(act);
     }
+
 }

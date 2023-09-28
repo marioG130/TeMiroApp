@@ -14,7 +14,7 @@
         android:layout_width="337dp"
         android:layout_height="375dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/examenvisual"/>
+        android:src="@drawable/service_examenvisual"/>
 
     <TextView
         android:layout_width="match_parent"

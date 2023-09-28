@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">TeMiroApp</string>
     <string name="mis_pedidos">Mis Pedidos</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_implementado">No Implementado !</string>
+    <string name="volver">Volver</string>
+    <string name="daltonismo">Daltonismo</string>
+    <string name="agudeza_visual">Agudeza Visual</string>
+    <string name="distancia_pupilar">Distancia Pupilar</string>
 </resources>
