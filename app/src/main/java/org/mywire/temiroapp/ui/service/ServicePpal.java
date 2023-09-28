@@ -1,4 +1,4 @@
-package org.mywire.temiroapp.ui.product;
+package org.mywire.temiroapp.ui.service;
 
 import static androidx.navigation.ViewKt.findNavController;
 
@@ -15,10 +15,10 @@ import org.mywire.temiroapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ProductServicesPpalFragment#newInstance} factory method to
+ * Use the {@link ServicePpal#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ProductServicesPpalFragment extends Fragment {
+public class ServicePpal extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,7 +29,7 @@ public class ProductServicesPpalFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ProductServicesPpalFragment() {
+    public ServicePpal() {
         // Required empty public constructor
     }
 
@@ -39,11 +39,11 @@ public class ProductServicesPpalFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ProductServicesPpalFragment.
+     * @return A new instance of fragment ServicePpal.
      */
     // TODO: Rename and change types and number of parameters
-    public static ProductServicesPpalFragment newInstance(String param1, String param2) {
-        ProductServicesPpalFragment fragment = new ProductServicesPpalFragment();
+    public static ServicePpal newInstance(String param1, String param2) {
+        ServicePpal fragment = new ServicePpal();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -61,36 +61,33 @@ public class ProductServicesPpalFragment extends Fragment {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View vista= inflater.inflate(R.layout.product_services_ppal, container, false);
-        Button btnIrAProducto = vista.findViewById(R.id.btnIrAProducto);
-        Button btn2 = vista.findViewById(R.id.btn2);
+        View vista = inflater.inflate(R.layout.service_ppal, container, false);
+        Button buttonCategoria1 = vista.findViewById(R.id.buttonCategoria1);
+        Button buttonCategoria2 = vista.findViewById(R.id.buttonCategoria2);
+        Button buttonCategoria3 = vista.findViewById(R.id.buttonCategoria3);
 
-        btnIrAProducto.setOnClickListener(new View.OnClickListener() {
+        buttonCategoria1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findNavController(view) .navigate(R.id.action_productServicesPpalFragment_to_productView);
+                findNavController(view) .navigate(R.id.action_servicePpal_to_service_descrip_taller);
             }
         });
 
-        btn2.setOnClickListener(new View.OnClickListener() {
+        buttonCategoria2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                findNavController(view) . navigate(R.id.action_productServicesPpalFragment_to_servicePpal);
+                findNavController(view).navigate(R.id.action_servicePpal_to_service_descrip_seguro);
             }
         });
 
-
+        buttonCategoria3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                findNavController(view) .navigate(R.id.action_servicePpal_to_service_descrip_consulta_oftal);
+            }
+        });
 
 
         return vista;
