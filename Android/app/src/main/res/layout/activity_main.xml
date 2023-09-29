@@ -12,6 +12,7 @@
         android:layout_width="46dp"
         android:layout_height="55dp"
         android:layout_marginStart="16dp"
+        android:onClick="iniciarLogin"
         android:src="@drawable/main_icon_usuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/iconoHome"
