@@ -9,8 +9,8 @@ import org.mywire.temiroapp.ui.main.ActivNoImplementado;
 import org.mywire.temiroapp.ui.product.ProductsServicesPpal;
 import org.mywire.temiroapp.ui.store.StoreActivity;
 import org.mywire.temiroapp.ui.test.TestPrincipal;
-import org.mywire.temiroapp.ui.user.login_activity;
-import org.mywire.temiroapp.ui.user.registro_activity;
+import org.mywire.temiroapp.ui.user.LoginActivity;
+import org.mywire.temiroapp.ui.user.RegistroActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,10 +28,9 @@ public class MainActivity extends AppCompatActivity {
 
     // Epica 2 - Manejo de Usuarios ----------------------------------------------------------------
     public void iniciarLogin(View view) {
-        Intent act = new Intent(this, login_activity.class);
+        Intent act = new Intent(this, LoginActivity.class);
         startActivity(act);
     }
-
 
     // Epica 3 - Productos y Servicios -------------------------------------------------------------
     public void iniciarProdServ(View view) {
