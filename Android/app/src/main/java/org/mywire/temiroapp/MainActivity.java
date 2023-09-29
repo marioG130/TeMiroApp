@@ -10,6 +10,7 @@ import org.mywire.temiroapp.ui.product.ProductsServicesPpal;
 import org.mywire.temiroapp.ui.store.StoreActivity;
 import org.mywire.temiroapp.ui.test.TestPrincipal;
 import org.mywire.temiroapp.ui.user.login_activity;
+import org.mywire.temiroapp.ui.user.registro_activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Intent act = new Intent(this, login_activity.class);
         startActivity(act);
     }
+
 
     // Epica 3 - Productos y Servicios -------------------------------------------------------------
     public void iniciarProdServ(View view) {
