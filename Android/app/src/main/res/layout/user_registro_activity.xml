@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.user.registro_activity">
+    tools:context=".ui.user.RegistroActivity">
 
     <ImageView
         android:id="@+id/imageView5"
@@ -131,7 +131,8 @@
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inicia Sesión"
+        android:onClick="iniciarLogin"
+        android:text="  Inicia Sesión"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
