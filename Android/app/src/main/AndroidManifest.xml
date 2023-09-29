@@ -16,6 +16,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ui.user.registro_activity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.login_activity"
+            android:exported="false" />
+        <activity
             android:name=".ui.main.ActivNoImplementado"
             android:exported="false" />
         <activity
@@ -32,6 +38,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
