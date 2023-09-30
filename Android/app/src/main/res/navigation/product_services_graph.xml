@@ -68,5 +68,5 @@
         android:id="@+id/service_Formu_Consulta"
         android:name="org.mywire.temiroapp.ui.service.Service_Formu_Consulta"
         android:label="fragment_service__formu__consulta"
-        tools:layout="@layout/service__formu__consulta" />
+        tools:layout="@layout/service_formu_consulta" />
 </navigation>

@@ -1,16 +1,13 @@
 package org.mywire.temiroapp.ui.train;
 
-import static androidx.navigation.ViewKt.findNavController;
-
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
+import org.mywire.temiroapp.R;
 
-public class TrainActivity2 extends AppCompatActivity {
+public class TrainActivity1 extends AppCompatActivity {
 
     private Button parpadeoButton;
     private Button enfoqueButton;
@@ -22,13 +19,13 @@ public class TrainActivity2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_train);
+        setContentView(R.layout.train_activity);
 
         parpadeoButton = findViewById(R.id.parpadeoButton);
         enfoqueButton = findViewById(R.id.enfoqueButton);
         movimientosButton = findViewById(R.id.movimientosButton);
         mensajeParpadeo = findViewById(R.id.mensajeParpadeo);
-        mensajeAgudeza = findViewById(R.id.mensajeEnfoque);
+        mensajeEnfoque = findViewById(R.id.mensajeEnfoque);
         mensajeMovimientos = findViewById(R.id.mensajeMovimientos);
 
         parpadeoButton.setOnClickListener(new View.OnClickListener() {

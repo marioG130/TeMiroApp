@@ -6,4 +6,5 @@
     <string name="daltonismo">Daltonismo</string>
     <string name="agudeza_visual">Agudeza Visual</string>
     <string name="distancia_pupilar">Distancia Pupilar</string>
+    <string name="hello_blank_fragment">Blank fragment</string>
 </resources>
