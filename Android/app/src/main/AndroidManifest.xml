@@ -16,13 +16,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".QuoteActivity"
+            android:name=".ui.quote.QuoteTurnero"
             android:exported="false" />
         <activity
-            android:name=".ContactActivity2"
+            android:name=".ui.main.ContactoUno"
             android:exported="false" />
         <activity
-            android:name=".ContactActivity1"
+            android:name=".ui.main.ContactoDos"
             android:exported="false" />
         <activity
             android:name=".ui.user.RegistroActivity"
