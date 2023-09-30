@@ -27,6 +27,7 @@
         android:layout_marginBottom="68dp"
         android:layout_weight="1"
         android:backgroundTint="@color/buttonColor"
+        android:contentDescription="@string/volver"
         android:insetBottom="4dp"
         android:onClick="botonVolverAClick"
         android:text="@string/volver"

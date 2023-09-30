@@ -11,6 +11,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView1"
+            android:name="org.mywire.temiroapp.ui.main.TopMenuFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            tools:layout="@layout/main_frag_top_menu" />
+
         <Button
             android:id="@+id/btnIrAProducto"
             style="@style/Widget.Material3.Button"

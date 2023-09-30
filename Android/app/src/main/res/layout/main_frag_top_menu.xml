@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center_horizontal"
-    android:background="@color/material_dynamic_neutral90"
+    android:background="@color/material_dynamic_neutral100"
     android:orientation="vertical"
     tools:context=".ui.main.TopMenuFragment">
 
@@ -18,7 +19,15 @@
         <ImageButton
             android:id="@+id/backButton"
             style="@style/botonesTop"
-            android:src="@drawable/main_back_button_icon_13" />
+            android:contentDescription="@string/volver"
+            android:src="@drawable/main_back_button_icon" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/main_logo" />
 
     </LinearLayout>
 

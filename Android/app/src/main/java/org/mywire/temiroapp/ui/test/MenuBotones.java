@@ -1,20 +1,16 @@
 package org.mywire.temiroapp.ui.test;
 
-import static androidx.navigation.ViewKt.findNavController;
-
-import android.app.Activity;
 import android.os.Bundle;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import androidx.fragment.app.Fragment;
 import org.mywire.temiroapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MenuBotones#newInstance} factory method to
- * create an instance of this fragment.
+ * Use the {@link MenuBotones#newInstance} factory method to create an instance of this fragment.
  */
 public class MenuBotones extends Fragment {
 
@@ -36,8 +32,7 @@ public class MenuBotones extends Fragment {
     }
 
     /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
+     * Use this factory method to create a new instance of this fragment using the provided parameters.
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
@@ -71,19 +66,19 @@ public class MenuBotones extends Fragment {
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findNavController(v).navigate(R.id.action_menuBotones_to_fragNoImplementado);
+                androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_menuBotones_to_testDaltonismo1);
             }
         });
         boton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findNavController(v).navigate(R.id.action_menuBotones_to_fragNoImplementado);
+                androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_menuBotones_to_testAgudeza1);
             }
         });
         boton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                findNavController(v).navigate(R.id.action_menuBotones_to_fragNoImplementado);
+                androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_menuBotones_to_fragNoImplementado);
             }
         });
         return menuBot;

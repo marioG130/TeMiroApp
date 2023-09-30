@@ -9,6 +9,7 @@ import org.mywire.temiroapp.ui.main.ActivNoImplementado;
 import org.mywire.temiroapp.ui.product.ProductsServicesPpal;
 import org.mywire.temiroapp.ui.store.StoreActivity;
 import org.mywire.temiroapp.ui.test.TestPrincipal;
+import org.mywire.temiroapp.ui.train.TrainActivity1;
 import org.mywire.temiroapp.ui.user.LoginActivity;
 import org.mywire.temiroapp.ui.user.RegistroActivity;
 
@@ -58,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Epica 7 - Ejercicios de Visión --------------------------------------------------------------
     public void iniciarEjercicios(View view) {
-        Intent act = new Intent(this, ActivNoImplementado.class);
+        Intent act = new Intent(this, TrainActivity1.class);
         startActivity(act);
     }
 

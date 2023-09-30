@@ -13,6 +13,12 @@
         <action
             android:id="@+id/action_menuBotones_to_fragNoImplementado"
             app:destination="@id/fragNoImplementado" />
+        <action
+            android:id="@+id/action_menuBotones_to_testDaltonismo1"
+            app:destination="@id/testDaltonismo1" />
+        <action
+            android:id="@+id/action_menuBotones_to_testAgudeza1"
+            app:destination="@id/testAgudeza1" />
     </fragment>
 
     <fragment
@@ -20,5 +26,15 @@
         android:name="org.mywire.temiroapp.ui.main.FragNoImplementado"
         android:label="main_frag_noimplementado"
         tools:layout="@layout/main_frag_noimplementado" />
+    <fragment
+        android:id="@+id/testDaltonismo1"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo1"
+        android:label="test_frag_daltonismo1"
+        tools:layout="@layout/test_frag_daltonismo1" />
+    <fragment
+        android:id="@+id/testAgudeza1"
+        android:name="org.mywire.temiroapp.ui.test.TestAgudeza1"
+        android:label="test_frag_agudeza1"
+        tools:layout="@layout/test_frag_agudeza1" />
 
 </navigation>
