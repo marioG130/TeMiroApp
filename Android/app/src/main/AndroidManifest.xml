@@ -33,6 +33,9 @@
         <activity
             android:name=".ui.test.TestPrincipal"
             android:exported="false" />
+        <activity 
+            android:name=".ui.train.TrainActivity2"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
