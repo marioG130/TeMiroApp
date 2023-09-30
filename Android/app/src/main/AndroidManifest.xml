@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".QuoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ContactActivity1"
+            android:exported="false" />
+        <activity
             android:name=".ui.user.RegistroActivity"
             android:exported="false" />
         <activity
@@ -33,7 +42,7 @@
         <activity
             android:name=".ui.test.TestPrincipal"
             android:exported="false" />
-        <activity 
+        <activity
             android:name=".ui.train.TrainActivity1"
             android:exported="false" />
         <activity
@@ -41,6 +50,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
