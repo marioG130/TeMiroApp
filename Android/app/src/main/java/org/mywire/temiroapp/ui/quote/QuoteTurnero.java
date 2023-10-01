@@ -1,8 +1,11 @@
-package org.mywire.temiroapp;
+package org.mywire.temiroapp.ui.quote;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import org.mywire.temiroapp.MainActivity;
+import org.mywire.temiroapp.R;
 
 public class QuoteTurnero extends AppCompatActivity {
 
@@ -11,4 +14,10 @@ public class QuoteTurnero extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quote_turnero);
     }
+
+    public void volverAMenu(View view) {
+        Intent act = new Intent(this, MainActivity.class);
+        startActivity(act);
+    }
+
 }

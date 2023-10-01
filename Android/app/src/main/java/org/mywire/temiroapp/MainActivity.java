@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import org.mywire.temiroapp.ui.main.ActivNoImplementado;
+import org.mywire.temiroapp.ui.main.ContactoUno;
 import org.mywire.temiroapp.ui.product.ProductsServicesPpal;
+import org.mywire.temiroapp.ui.quote.QuoteTurnero;
 import org.mywire.temiroapp.ui.store.StoreActivity;
 import org.mywire.temiroapp.ui.test.TestPrincipal;
 import org.mywire.temiroapp.ui.train.TrainActivity1;
@@ -23,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Epica 1 - Páginas Principales ---------------------------------------------------------------
     public void iniciarContacto(View view) {
-        Intent act = new Intent(this, ActivNoImplementado.class);
+        Intent act = new Intent(this, ContactoUno.class);
         startActivity(act);
     }
 
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Epica 5 - Turnero de Servicios --------------------------------------------------------------
     public void iniciarTurnero(View view) {
-        Intent act = new Intent(this, ActivNoImplementado.class);
+        Intent act = new Intent(this, QuoteTurnero.class);
         startActivity(act);
     }
 
