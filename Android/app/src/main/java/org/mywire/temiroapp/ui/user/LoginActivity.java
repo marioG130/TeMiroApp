@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -16,6 +18,11 @@ public class LoginActivity extends AppCompatActivity {
 
     public void iniciarRegistro(View view) {
         Intent act = new Intent(this, RegistroActivity.class);
+        startActivity(act);
+    }
+
+    public void volverHome(View view) {
+        Intent act = new Intent(this, MainActivity.class);
         startActivity(act);
     }
 
