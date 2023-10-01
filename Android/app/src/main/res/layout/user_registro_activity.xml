@@ -29,10 +29,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="393dp"
-        android:layout_height="493dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="398dp"
+        android:layout_height="503dp"
+        android:layout_marginTop="20dp"
         android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloRegistro">
@@ -50,7 +51,7 @@
             android:id="@+id/editTextNomUs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="text" />
 
@@ -67,7 +68,7 @@
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="textEmailAddress" />
 
@@ -84,7 +85,7 @@
             android:id="@+id/editTextTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="textPassword" />
 
@@ -101,15 +102,15 @@
             android:id="@+id/editTextTextPassword2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/btn_registro"
             android:layout_width="match_parent"
-            android:layout_height="61dp"
-            android:layout_marginTop="20sp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
             android:backgroundTint="#16CAF0"
             android:text="Registrarse"
             android:textSize="20sp" />

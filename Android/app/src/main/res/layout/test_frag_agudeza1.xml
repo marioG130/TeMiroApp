@@ -15,4 +15,11 @@
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
+    <Button
+        android:id="@+id/botonComenzar"
+        style="@style/botonesMenu"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="Comenzar" />
+
 </FrameLayout>

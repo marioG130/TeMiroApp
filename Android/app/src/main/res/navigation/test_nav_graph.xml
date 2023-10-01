@@ -30,11 +30,47 @@
         android:id="@+id/testDaltonismo1"
         android:name="org.mywire.temiroapp.ui.test.TestDaltonismo1"
         android:label="test_frag_daltonismo1"
-        tools:layout="@layout/test_frag_daltonismo1" />
+        tools:layout="@layout/test_frag_daltonismo1" >
+        <action
+            android:id="@+id/action_testDaltonismo1_to_testDaltonismo2"
+            app:destination="@id/testDaltonismo2" />
+    </fragment>
     <fragment
         android:id="@+id/testAgudeza1"
         android:name="org.mywire.temiroapp.ui.test.TestAgudeza1"
         android:label="test_frag_agudeza1"
-        tools:layout="@layout/test_frag_agudeza1" />
+        tools:layout="@layout/test_frag_agudeza1" >
+        <action
+            android:id="@+id/action_testAgudeza1_to_testAgudeza2"
+            app:destination="@id/testAgudeza2" />
+    </fragment>
+    <fragment
+        android:id="@+id/testDaltonismo2"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo2"
+        android:label="test_frag_daltonismo2"
+        tools:layout="@layout/test_frag_daltonismo2" >
+        <action
+            android:id="@+id/action_testDaltonismo2_to_testDaltonismo3"
+            app:destination="@id/testDaltonismo3" />
+    </fragment>
+    <fragment
+        android:id="@+id/testDaltonismo3"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo3"
+        android:label="test_frag_daltonismo3"
+        tools:layout="@layout/test_frag_daltonismo3" >
+        <action
+            android:id="@+id/action_testDaltonismo3_to_testDaltonismo4"
+            app:destination="@id/testDaltonismo4" />
+    </fragment>
+    <fragment
+        android:id="@+id/testDaltonismo4"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo4"
+        android:label="test_frag_daltonismo4"
+        tools:layout="@layout/test_frag_daltonismo4" />
+    <fragment
+        android:id="@+id/testAgudeza2"
+        android:name="org.mywire.temiroapp.ui.test.TestAgudeza2"
+        android:label="test_frag_agudeza2"
+        tools:layout="@layout/test_frag_agudeza2" />
 
 </navigation>

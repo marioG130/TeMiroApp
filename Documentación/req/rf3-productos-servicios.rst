@@ -16,10 +16,6 @@
 
    **2.3** El administrador debe poder eliminar productos del catálogo.
 
-**3. Seguridad**
-
-   **3.1** El sistema debe tener medidas de seguridad para prevenir ataques.
-
 
 3b) Servicios
 ~~~~~~~~~~~~~
@@ -63,17 +59,4 @@
    **4.2** El administrador debe poder ver y responder a las consultas de manera eficiente.
 
    **4.3** El sistema debe mantener un registro de todas las consultas y respuestas para referencia futura.
-
-**5. Seguridad:**
-
-   **5.1** Los datos personales y de consulta de los usuarios deben estar protegidos mediante cifrado durante la transmisión.
-
-   **5.2** Deben implementarse medidas de seguridad contra ataques.
-
-**6. Cumplimiento Legal y Regulatorio:**
-
-   **6.1** El sistema debe cumplir con las regulaciones de privacidad de datos aplicables, como el GDPR si es necesario.
-
-   **6.2** Debe mantener registros de actividad y consultas para cumplir con las leyes y regulaciones locales.
-
 

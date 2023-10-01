@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
 import org.mywire.temiroapp.R;
 
 /**
@@ -21,6 +23,10 @@ public class TestDaltonismo2 extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    Button boton1;
+    Button boton2;
+    Button boton3;
 
     public TestDaltonismo2() {
         // Required empty public constructor
@@ -53,9 +59,21 @@ public class TestDaltonismo2 extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.test_frag_daltonismo2, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View vista = inflater.inflate(R.layout.test_frag_daltonismo2, container, false);
+        boton1 = (Button) vista.findViewById(R.id.button1);
+        boton2 = (Button) vista.findViewById(R.id.button2);
+        boton3 = (Button) vista.findViewById(R.id.button3);
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_testDaltonismo2_to_testDaltonismo3);
+            }
+        };
+        boton1.setOnClickListener(listener);
+        boton2.setOnClickListener(listener);
+        boton3.setOnClickListener(listener);
+        return vista;
     }
+
 }
