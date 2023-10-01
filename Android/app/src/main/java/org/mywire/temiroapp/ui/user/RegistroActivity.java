@@ -19,4 +19,9 @@ public class RegistroActivity extends AppCompatActivity {
         startActivity(act);
     }
 
+    public void volverLogin(View view) {
+        Intent act = new Intent(this, LoginActivity.class);
+        startActivity(act);
+    }
+
 }

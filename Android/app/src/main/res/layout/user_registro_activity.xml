@@ -29,8 +29,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
-        android:layout_width="398dp"
-        android:layout_height="503dp"
+        android:layout_width="392dp"
+        android:layout_height="504dp"
         android:layout_marginTop="20dp"
         android:orientation="vertical"
         android:padding="20dp"
@@ -108,10 +108,10 @@
 
         <Button
             android:id="@+id/btn_registro"
+            style="@style/botonesMenu"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="16dp"
-            android:backgroundTint="#16CAF0"
             android:text="Registrarse"
             android:textSize="20sp" />
     </LinearLayout>
@@ -142,4 +142,16 @@
         app:layout_constraintStart_toEndOf="@+id/textViewYaTienesCuenta"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"
         app:layout_constraintVertical_bias="0.386" />
+
+    <ImageView
+        android:id="@+id/btn_volverLogin"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:onClick="volverLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
 </androidx.constraintlayout.widget.ConstraintLayout>
