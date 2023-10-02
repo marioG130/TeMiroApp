@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_nav_graph"
+    app:startDestination="@id/menuBotones">
+
+    <fragment
+        android:id="@+id/menuBotones"
+        android:name="org.mywire.temiroapp.ui.test.MenuBotones"
+        android:label="test_frag_menu_botones"
+        tools:layout="@layout/test_frag_menu_botones" >
+        <action
+            android:id="@+id/action_menuBotones_to_fragNoImplementado"
+            app:destination="@id/fragNoImplementado" />
+        <action
+            android:id="@+id/action_menuBotones_to_testDaltonismo1"
+            app:destination="@id/testDaltonismo1" />
+        <action
+            android:id="@+id/action_menuBotones_to_testAgudeza1"
+            app:destination="@id/testAgudeza1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragNoImplementado"
+        android:name="org.mywire.temiroapp.ui.main.FragNoImplementado"
+        android:label="main_frag_noimplementado"
+        tools:layout="@layout/main_frag_noimplementado" />
+    <fragment
+        android:id="@+id/testDaltonismo1"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo1"
+        android:label="test_frag_daltonismo1"
+        tools:layout="@layout/test_frag_daltonismo1" >
+        <action
+            android:id="@+id/action_testDaltonismo1_to_testDaltonismo2"
+            app:destination="@id/testDaltonismo2" />
+    </fragment>
+    <fragment
+        android:id="@+id/testAgudeza1"
+        android:name="org.mywire.temiroapp.ui.test.TestAgudeza1"
+        android:label="test_frag_agudeza1"
+        tools:layout="@layout/test_frag_agudeza1" >
+        <action
+            android:id="@+id/action_testAgudeza1_to_testAgudeza2"
+            app:destination="@id/testAgudeza2" />
+    </fragment>
+    <fragment
+        android:id="@+id/testDaltonismo2"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo2"
+        android:label="test_frag_daltonismo2"
+        tools:layout="@layout/test_frag_daltonismo2" >
+        <action
+            android:id="@+id/action_testDaltonismo2_to_testDaltonismo3"
+            app:destination="@id/testDaltonismo3" />
+    </fragment>
+    <fragment
+        android:id="@+id/testDaltonismo3"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo3"
+        android:label="test_frag_daltonismo3"
+        tools:layout="@layout/test_frag_daltonismo3" >
+        <action
+            android:id="@+id/action_testDaltonismo3_to_testDaltonismo4"
+            app:destination="@id/testDaltonismo4" />
+    </fragment>
+    <fragment
+        android:id="@+id/testDaltonismo4"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo4"
+        android:label="test_frag_daltonismo4"
+        tools:layout="@layout/test_frag_daltonismo4" />
+    <fragment
+        android:id="@+id/testAgudeza2"
+        android:name="org.mywire.temiroapp.ui.test.TestAgudeza2"
+        android:label="test_frag_agudeza2"
+        tools:layout="@layout/test_frag_agudeza2" />
+
+</navigation>

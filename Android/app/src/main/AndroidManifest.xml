@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,13 +13,43 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TeMiroApp"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.quote.QuoteTurnero"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.ContactoUno"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.ContactoDos"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.RegistroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.user.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.main.ActivNoImplementado"
+            android:exported="false" />
+        <activity
+            android:name=".ui.product.ProductsServicesPpal"
+            android:exported="false" />
+        <activity
+            android:name=".ui.store.StoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.test.TestPrincipal"
+            android:exported="false" />
+        <activity
+            android:name=".ui.train.TrainActivity1"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

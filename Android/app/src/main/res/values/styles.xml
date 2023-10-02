@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="botonesTop">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="botonesMenu">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:backgroundTint">@color/buttonColor</item>
+    </style>
+
+    <style name="botonesOpcion">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:insetLeft">10dp</item>
+        <item name="android:insetRight">10dp</item>
+        <item name="android:backgroundTint">@color/material_dynamic_neutral60</item>
+    </style>
+
+</resources>

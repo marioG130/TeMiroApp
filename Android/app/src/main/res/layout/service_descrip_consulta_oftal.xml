@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- ImageView en la parte superior -->
+
+    <!-- Descripción del servicio -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="337dp"
+        android:layout_height="375dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/service_examenvisual"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="En nuestra óptica, ofrecemos una amplia gama de servicios oftalmológicos diseñados para cuidar de tu salud visual y garantizar que tus ojos estén en las mejores condiciones. Nuestro equipo de profesionales altamente capacitados y apasionados por la oftalmología está aquí para atenderte.
+        Estamos aquí para ayudarte a cuidar de tus ojos y mantener una visión clara y saludable a lo largo de tu vida."
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Botón "Formulario de Consulta" -->
+    <Button
+        android:id="@+id/btnConsulta2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Formulario de Consulta" />
+
+</LinearLayout>
