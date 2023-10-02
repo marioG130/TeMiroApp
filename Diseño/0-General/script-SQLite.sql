@@ -5,6 +5,7 @@ DROP TABLE IF EXISTS HistoricoTest;
 DROP TABLE IF EXISTS PasoTest;
 DROP TABLE IF EXISTS TipoTest;
 DROP TABLE IF EXISTS SesionUsuario;
+DROP TABLE IF EXISTS HistorialActividad;
 DROP TABLE IF EXISTS Productos;
 DROP TABLE IF EXISTS Servicios;
 DROP TABLE IF EXISTS Compras;
@@ -63,6 +64,16 @@ CREATE TABLE SesionUsuario (
     fhInicio TEXT NOT NULL,
     fhFin TEXT NOT NULL,
     PRIMARY KEY (idSesion),
+    FOREIGN KEY (idUsuario) REFERENCES UsuarioRegistrado(idUsuario)
+);
+
+CREATE TABLE HistorialActividad (
+    idUsuario INTEGER NOT NULL,
+    fhConsulta TEXT NOT NULL,
+    asunto TEXT NOT NULL,
+    consulta TEXT NOT NULL,
+    telefono TEXT NOT NULL,
+    PRIMARY KEY (idUsuario, fhConsulta),
     FOREIGN KEY (idUsuario) REFERENCES UsuarioRegistrado(idUsuario)
 );
 
