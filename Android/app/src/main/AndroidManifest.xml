@@ -45,6 +45,8 @@
         <activity
             android:name=".ui.test.TestPrincipal"
             android:exported="false" />
+        <activity android:name=".ui.product.ProductDetailActivity">
+        </activity>
         <activity
             android:name=".ui.train.TrainActivity1"
             android:exported="false" />
