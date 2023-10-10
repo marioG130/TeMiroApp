@@ -29,16 +29,16 @@
             android:text="Parpadeo" />
 
         <Button
-            android:id="@+id/enfoqueButton"
+            android:id="@+id/cuerdaButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="100dp"
-            android:text="Enfoque Lejos Cerca" 
+            android:text="Cuerda de Brock" 
             android:layout_below="@+id/parpadeoButton" />
 
         <Button
-            android:id="@+id/movimientosButton"
+            android:id="@+id/movimientoButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -57,21 +57,21 @@
         android:visibility="gone"/> <!-- Inicialmente oculto -->
 
         <TextView
-        android:id="@+id/mensajeEnfoque"
+        android:id="@+id/mensajeCuerda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Este ejercicio está en construcción"
-        android:layout_below="@+id/enfoqueButton"
+        android:layout_below="@+id/cuerdaButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:visibility="gone"/> <!-- Inicialmente oculto -->
 
         <TextView
-        android:id="@+id/mensajeMovimientos"
+        android:id="@+id/mensajeMovimiento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Este ejercicio está en construcción"
-        android:layout_below="@+id/movimientosButton"
+        android:layout_below="@+id/movimientoButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:visibility="gone"/> <!-- Inicialmente oculto -->
