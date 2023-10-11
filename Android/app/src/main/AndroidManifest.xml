@@ -40,13 +40,14 @@
             android:name=".ui.product.ProductsServicesPpal"
             android:exported="false" />
         <activity
+            android:name=".ui.product.ProductDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.store.StoreActivity"
             android:exported="false" />
         <activity
             android:name=".ui.test.TestPrincipal"
             android:exported="false" />
-        <activity android:name=".ui.product.ProductDetailActivity">
-        </activity>
         <activity
             android:name=".ui.train.TrainActivity1"
             android:exported="false" />
@@ -55,7 +56,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

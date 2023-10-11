@@ -343,7 +343,7 @@
             android:layout_width="149dp"
             android:layout_height="83dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/lentestendencia" />
+            app:srcCompat="@drawable/product_lentestendencia" />
 
         <LinearLayout
             android:layout_width="236dp"
@@ -487,7 +487,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/lentesbluefilter" />
+                    app:srcCompat="@drawable/product_lentesbluefilter" />
 
                 <LinearLayout
                     android:layout_width="236dp"
@@ -535,7 +535,7 @@
                     android:layout_width="149dp"
                     android:layout_height="83dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/lentesdelejos" />
+                    app:srcCompat="@drawable/product_lentesdelejos" />
 
                 <LinearLayout
                     android:layout_width="236dp"
