@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import org.mywire.temiroapp.R;
 import android.net.Uri;
+import android.widget.VideoView;
 
 public class TrainActivity1 extends AppCompatActivity {
 
@@ -15,7 +16,7 @@ public class TrainActivity1 extends AppCompatActivity {
     private Button movimientoButton;
     private TextView mensajeParpadeo;
     private TextView mensajeCuerda;
-    private TextView mensajeMovimientos;
+    private TextView mensajeMovimiento;
     private VideoView videoView;
     private TextView descripcionTextView;
 
@@ -25,17 +26,17 @@ public class TrainActivity1 extends AppCompatActivity {
         setContentView(R.layout.train_activity);
 
         parpadeoButton = findViewById(R.id.parpadeoButton);
-        enfoqueButton = findViewById(R.id.cuerdaButton);
-        movimientosButton = findViewById(R.id.movimientoButton);
+        cuerdaButton = findViewById(R.id.cuerdaButton);
+        movimientoButton = findViewById(R.id.movimientoButton);
         mensajeParpadeo = findViewById(R.id.mensajeParpadeo);
-        mensajeEnfoque = findViewById(R.id.mensajeCuerda);
-        mensajeMovimientos = findViewById(R.id.mensajeMovimiento);
+        mensajeCuerda = findViewById(R.id.mensajeCuerda);
+        mensajeMovimiento = findViewById(R.id.mensajeMovimiento);
         videoView = findViewById(R.id.videoView);
         descripcionTextView = findViewById(R.id.descripcionTextView);
 
         //recordar la carpeta res/raw con los 3 videos
         // Configurar la fuente del video para Parpadeo
-        final String videoPathParpadeo = "android.resource://" + getPackageName() + "/" + R.raw.Parpadeo_Ejer;
+        final String videoPathParpadeo = "android.resource://" + getPackageName() + "/" + R.raw.parpadeo_ejer;
         parpadeoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,8 +53,8 @@ public class TrainActivity1 extends AppCompatActivity {
         });
 
         // Configurar la fuente del video para cuerda
-        final String videoPathCuerda = "android.resource://" + getPackageName() + "/" + R.raw.Cuerda_Ejer;
-        enfoqueButton.setOnClickListener(new View.OnClickListener() {
+        final String videoPathCuerda = "android.resource://" + getPackageName() + "/" + R.raw.cuerda_ejer;
+        cuerdaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Mostrar mensaje de construcción para el ejercicio Cuerda
@@ -69,7 +70,7 @@ public class TrainActivity1 extends AppCompatActivity {
         });
 
         // Configurar la fuente del video para Movimientos
-        final String videoPathMovimientos = "android.resource://" + getPackageName() + "/" + R.raw.Movimiento_Ejer;
+        final String videoPathMovimiento = "android.resource://" + getPackageName() + "/" + R.raw.movimiento_ejer;
         movimientoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

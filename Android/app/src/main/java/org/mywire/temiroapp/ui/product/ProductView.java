@@ -16,7 +16,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import org.mywire.temiroapp.util.ProductService;
+import org.mywire.temiroapp.data.remote.ProductService;
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.model.Product;
 

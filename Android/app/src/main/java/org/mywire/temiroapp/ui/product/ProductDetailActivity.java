@@ -20,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.model.Product;
-import org.mywire.temiroapp.util.ProductService;
+import org.mywire.temiroapp.data.remote.ProductService;
 
 public class ProductDetailActivity extends AppCompatActivity {
 
