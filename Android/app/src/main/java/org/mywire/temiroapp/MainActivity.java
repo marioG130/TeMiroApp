@@ -2,8 +2,12 @@ package org.mywire.temiroapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import org.mywire.temiroapp.ui.main.ActivNoImplementado;
 import org.mywire.temiroapp.ui.main.ContactoUno;
@@ -21,7 +25,36 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Recupera el valor pasado desde la actividad previa.
+        boolean mostrarListaCompleta = getIntent().getBooleanExtra("mostrarListaCompleta", false);
+
+        Button boton1 = findViewById(R.id.btnVerCatalogo);
+        Button boton2 = findViewById(R.id.botonTurno);
+        Button boton3 = findViewById(R.id.botonEstadoDeCompra);
+        ImageButton imagemin = findViewById(R.id.iconoUsuario);
+        TextView user_name_main = findViewById(R.id.user_name_main);
+
+        if (mostrarListaCompleta) {
+            boton1.setVisibility(View.VISIBLE);
+            boton2.setVisibility(View.VISIBLE);
+            boton3.setVisibility(View.VISIBLE);
+            imagemin.setVisibility(View.GONE);
+        } else {
+            boton1.setVisibility(View.VISIBLE);
+            boton2.setVisibility(View.GONE);
+            boton3.setVisibility(View.GONE);
+            user_name_main.setVisibility(View.GONE);
+            imagemin.setVisibility(View.VISIBLE);
+        }
     }
+
+
+
+
+
+
+
 
     // Epica 1 - Páginas Principales ---------------------------------------------------------------
     public void iniciarContacto(View view) {
@@ -64,5 +97,6 @@ public class MainActivity extends AppCompatActivity {
         Intent act = new Intent(this, TrainActivity1.class);
         startActivity(act);
     }
+
 
 }

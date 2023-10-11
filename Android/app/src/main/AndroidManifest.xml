@@ -16,6 +16,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".splashScreenMenu"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.user.PerfilUsuarioActivity"
             android:exported="false" />
         <activity
@@ -52,10 +58,12 @@
             android:name=".ui.train.TrainActivity1"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".splashScreen1"
+            android:exported="true"
+            android:theme="@style/SplashScreentheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -3,7 +3,19 @@
     <style name="Base.Theme.TeMiroApp" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/buttonColor</item>
     </style>
 
     <style name="Theme.TeMiroApp" parent="Base.Theme.TeMiroApp" />
+
+
+    <style name="SplashScreentheme" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+
+
+    </style>
+
+
+
 </resources>

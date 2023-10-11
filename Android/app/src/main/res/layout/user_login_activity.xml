@@ -95,7 +95,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/btn_splash_enter"
         android:layout_width="206dp"
         android:layout_height="77dp"
         app:layout_constraintEnd_toEndOf="parent"
