@@ -28,25 +28,24 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_marginTop="24dp"
-            android:gravity="center_vertical"
+            android:gravity="center_horizontal"
             android:orientation="horizontal"
             android:textAlignment="gravity"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-            <Button
+            <ImageView
                 android:id="@+id/botonVolverF"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/buttonColor"
-                android:insetBottom="4dp"
+                android:layout_width="40dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="4dp"
                 android:onClick="volverStore"
-                android:text="Volver"
-                android:textColor="@color/white"
-                app:iconPadding="8dp"
-                app:iconSize="18dp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="?attr/homeAsUpIndicator" />
 
             <TextView
                 android:id="@+id/textView3"
