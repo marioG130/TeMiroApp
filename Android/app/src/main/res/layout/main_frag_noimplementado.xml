@@ -6,7 +6,7 @@
     tools:context=".ui.main.FragNoImplementado">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/imgbtn_splash_enter"
         android:layout_width="229dp"
         android:layout_height="72dp"
         android:layout_gravity="center_horizontal"

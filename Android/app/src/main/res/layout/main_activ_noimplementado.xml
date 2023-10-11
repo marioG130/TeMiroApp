@@ -7,7 +7,7 @@
     tools:context=".ui.main.ActivNoImplementado">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/imgbtn_splash_enter"
         android:layout_width="232dp"
         android:layout_height="80dp"
         android:text="Actividad NO implementada !"
@@ -34,7 +34,7 @@
         android:textColor="@color/white"
         app:iconPadding="8dp"
         app:iconSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/imgbtn_splash_enter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
