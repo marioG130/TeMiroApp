@@ -6,6 +6,15 @@
     android:layout_height="match_parent"    >
 
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/splash_background" />
+
     <Button
         android:id="@+id/btn_splash_login"
         android:layout_width="wrap_content"
@@ -22,18 +31,6 @@
         app:iconPadding="0dp"
         app:iconSize="0dp" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
-        app:srcCompat="@drawable/main_logo" />
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,11 +46,11 @@
 
         <ImageButton
             android:id="@+id/btn_splash_enter"
+            style="@android:style/Widget.Holo.Light.ImageButton"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:backgroundTint="@color/white"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/enter_icon2" />
+            app:srcCompat="@drawable/splash_entericon" />
 
         <TextView
             android:id="@+id/imgbtn_splash_enter"
