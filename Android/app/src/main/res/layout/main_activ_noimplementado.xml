@@ -7,7 +7,7 @@
     tools:context=".ui.main.ActivNoImplementado">
 
     <TextView
-        android:id="@+id/imgbtn_splash_enter"
+        android:id="@+id/texto_no_imp"
         android:layout_width="232dp"
         android:layout_height="80dp"
         android:text="Actividad NO implementada !"
@@ -15,16 +15,16 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.193" />
 
     <Button
         android:id="@+id/botonVolverA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:layout_marginBottom="68dp"
+        android:layout_width="138dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="128dp"
         android:layout_weight="1"
         android:backgroundTint="@color/buttonColor"
         android:contentDescription="@string/volver"
@@ -34,11 +34,9 @@
         android:textColor="@color/white"
         app:iconPadding="8dp"
         app:iconSize="18dp"
-        app:layout_constraintBottom_toTopOf="@+id/imgbtn_splash_enter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/texto_no_imp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

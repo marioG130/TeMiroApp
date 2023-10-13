@@ -1,13 +1,15 @@
 package org.mywire.temiroapp.ui.test;
 
+import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import org.mywire.temiroapp.R;
+import org.mywire.temiroapp.data.local.SQLmanager;
+import org.mywire.temiroapp.model.Test;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +29,7 @@ public class TestDaltonismo1 extends Fragment {
     Button boton1;
     Button boton2;
     Button boton3;
+    Context ctx;
 
     public TestDaltonismo1() {
         // Required empty public constructor
@@ -60,6 +63,18 @@ public class TestDaltonismo1 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        ctx = getActivity();
+        Test TD1 = new Test(ctx);
+        TD1.setIdTest(4);
+        TD1.setNombre("Prueba");
+        TD1.setCantidadPasos(8);
+        TD1.insertar();
+
+        TD1.buscar(2);
+        TD1.setCantidadPasos(10);
+        TD1.modificar();
+
         View vista = inflater.inflate(R.layout.test_frag_daltonismo1, container, false);
         boton1 = (Button) vista.findViewById(R.id.button1);
         boton2 = (Button) vista.findViewById(R.id.button2);

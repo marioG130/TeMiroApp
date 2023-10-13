@@ -14,7 +14,7 @@
         android:layout_marginStart="8dp"
         android:adjustViewBounds="true"
         android:backgroundTint="@color/white"
-        android:onClick="iniciarLogin"
+        android:onClick="iniciarUsuario"
         android:scaleType="centerCrop"
         android:src="@drawable/main_icon_usuario"
         app:layout_constraintBottom_toBottomOf="parent"
