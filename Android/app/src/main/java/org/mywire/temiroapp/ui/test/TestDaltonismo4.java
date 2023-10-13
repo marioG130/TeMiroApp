@@ -61,20 +61,6 @@ public class TestDaltonismo4 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View vista = inflater.inflate(R.layout.test_frag_daltonismo4, container, false);
-        /*
-        boton1 = (Button) vista.findViewById(R.id.button1);
-        boton2 = (Button) vista.findViewById(R.id.button2);
-        boton3 = (Button) vista.findViewById(R.id.button3);
-        View.OnClickListener listener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_testDaltonismo4_to_);
-            }
-        };
-        boton1.setOnClickListener(listener);
-        boton2.setOnClickListener(listener);
-        boton3.setOnClickListener(listener);
-         */
         return vista;
     }
 

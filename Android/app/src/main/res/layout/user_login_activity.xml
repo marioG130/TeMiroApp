@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="volverHome"
     tools:context=".ui.user.LoginActivity">
 
     <LinearLayout
@@ -58,11 +57,12 @@
         <Button
             android:id="@+id/btn_InicioSesion"
             style="@style/botonesMenu"
+            android:text="Ingresar"
+            android:textSize="24sp"
+            android:onClick="iniciarSesion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Ingresar"
-            android:textSize="24sp" />
+            android:layout_marginTop="10dp" />
 
     </LinearLayout>
 
@@ -95,7 +95,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/btn_splash_enter"
+        android:id="@+id/imageView3"
         android:layout_width="206dp"
         android:layout_height="77dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -139,11 +139,11 @@
         android:layout_width="40dp"
         android:layout_height="43dp"
         android:layout_marginTop="4dp"
+        android:onClick="volverHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="?attr/homeAsUpIndicator" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

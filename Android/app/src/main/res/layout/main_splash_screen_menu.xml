@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"    >
 
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -15,23 +14,8 @@
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/splash_background" />
 
-    <Button
-        android:id="@+id/btn_splash_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginEnd="150dp"
-        android:layout_marginBottom="24dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/buttonColor"
-        android:text="Login"
-        app:iconPadding="0dp"
-        app:iconSize="0dp" />
-
     <LinearLayout
+        android:id="@+id/ll_splash_enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btn_splash_login"
@@ -53,7 +37,7 @@
             app:srcCompat="@drawable/splash_entericon" />
 
         <TextView
-            android:id="@+id/imgbtn_splash_enter"
+            android:id="@+id/texto_no_imp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ingresar"
@@ -63,5 +47,20 @@
             android:textStyle="bold" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btn_splash_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginBottom="24dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/buttonColor"
+        android:text="Login"
+        app:iconPadding="0dp"
+        app:iconSize="0dp" />
 
 </RelativeLayout>
