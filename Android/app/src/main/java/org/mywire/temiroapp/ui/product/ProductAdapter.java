@@ -6,10 +6,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.model.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -56,4 +54,5 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             priceTextView.setText("Precio: $" + product.getPrecio());
         }
     }
+
 }

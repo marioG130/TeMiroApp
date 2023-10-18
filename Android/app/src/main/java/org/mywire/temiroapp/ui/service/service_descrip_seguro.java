@@ -1,18 +1,12 @@
 package org.mywire.temiroapp.ui.service;
 
-import static androidx.navigation.ActivityKt.findNavController;
-
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
 import androidx.navigation.ViewKt;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import org.mywire.temiroapp.R;
 
 /**
@@ -74,6 +68,7 @@ public class service_descrip_seguro extends Fragment {
                 ViewKt.findNavController(view) .navigate(R.id.action_service_descrip_seguro_to_service_Formu_Consulta);
             }
         });
-            return vista;
+        return vista;
     }
+
 }

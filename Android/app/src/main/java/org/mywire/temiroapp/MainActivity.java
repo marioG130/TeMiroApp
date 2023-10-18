@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import org.mywire.temiroapp.data.local.SQLmanager;
+import org.mywire.temiroapp.data.prefs.PreferencesHelper;
 import org.mywire.temiroapp.ui.main.ContactoUno;
 import org.mywire.temiroapp.ui.product.ProductsServicesPpal;
 import org.mywire.temiroapp.ui.quote.QuoteTurnero;
@@ -26,9 +28,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Recupera el valor pasado desde la actividad previa.
-        esUsuarioRegistrado = getIntent().getBooleanExtra("esUsuarioRegistrado", false);
-        nombreUsuario = getIntent().getStringExtra("nombreUsuario");
+        // Inicializa la database por si no existiera
+        SQLmanager man = new SQLmanager(this);
+        man.crearDatabase();
+
+        // Recupera valores desde las preferencias
+        PreferencesHelper prefs = new PreferencesHelper(this);
+        esUsuarioRegistrado = prefs.isUsuarioRegistrado();
+        nombreUsuario = prefs.getNombreUsuario();
 
         Button boton1 = findViewById(R.id.btnVerCatalogo);
         Button boton2 = findViewById(R.id.botonTurno);

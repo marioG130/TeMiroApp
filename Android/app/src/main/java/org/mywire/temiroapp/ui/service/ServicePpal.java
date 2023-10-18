@@ -1,16 +1,12 @@
 package org.mywire.temiroapp.ui.service;
 
 import static androidx.navigation.ViewKt.findNavController;
-
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import org.mywire.temiroapp.R;
 
 /**
@@ -88,7 +84,6 @@ public class ServicePpal extends Fragment {
                 findNavController(view) .navigate(R.id.action_servicePpal_to_service_descrip_consulta_oftal);
             }
         });
-
 
         return vista;
     }
