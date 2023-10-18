@@ -1,6 +1,7 @@
 package org.mywire.temiroapp.model;
 
 public class Product {
+
     private int idproducto;
     private String descripcion;
     private int idtipoproducto;
@@ -46,4 +47,5 @@ public class Product {
     public String getImagen() {
         return imagen;
     }
+
 }

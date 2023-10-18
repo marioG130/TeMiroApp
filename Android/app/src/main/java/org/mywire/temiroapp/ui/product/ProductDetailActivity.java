@@ -3,21 +3,17 @@ package org.mywire.temiroapp.ui.product;
 import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.RequestOptions;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.model.Product;
 import org.mywire.temiroapp.data.remote.ProductService;
@@ -32,9 +28,7 @@ public class ProductDetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.product_detail);
 
-
         int productId = getIntent().getIntExtra("productId", -1);
-
 
         productImage = findViewById(R.id.productImage);
         productName = findViewById(R.id.productName);
@@ -49,9 +43,7 @@ public class ProductDetailActivity extends AppCompatActivity {
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
-
             ProductService productService = retrofit.create(ProductService.class);
-
 
             Call<Product> call = productService.getProductById(productId);
             call.enqueue(new Callback<Product>() {
@@ -73,9 +65,7 @@ public class ProductDetailActivity extends AppCompatActivity {
                                         .diskCacheStrategy(DiskCacheStrategy.ALL))
                                 .into(productImage);
 
-
                     } else {
-
                         Toast.makeText(ProductDetailActivity.this, "Error al cargar los detalles del producto", Toast.LENGTH_SHORT).show();
                     }
                 }
@@ -87,6 +77,8 @@ public class ProductDetailActivity extends AppCompatActivity {
                 }
             });
         } else {
+
         }
     }
+
 }

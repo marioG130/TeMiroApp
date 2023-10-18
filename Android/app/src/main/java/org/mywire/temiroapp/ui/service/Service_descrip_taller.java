@@ -1,16 +1,12 @@
 package org.mywire.temiroapp.ui.service;
 
 import static androidx.navigation.ViewKt.findNavController;
-
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import org.mywire.temiroapp.R;
 
 /**
@@ -72,7 +68,7 @@ public class Service_descrip_taller extends Fragment {
                 findNavController(view) .navigate(R.id.action_service_descrip_taller_to_service_Formu_Consulta);
             }
         });
-
         return vista;
     }
+
 }

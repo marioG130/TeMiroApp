@@ -26,7 +26,6 @@ public class SplashScreenMenu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(SplashScreenMenu.this, MainActivity.class);
-                intent.putExtra("esUsuarioRegistrado", false); // Pasa información adicional a la actividad "activity_main"
                 startActivity(intent);
             }
         };
