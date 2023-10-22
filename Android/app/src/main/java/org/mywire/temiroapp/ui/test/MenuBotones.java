@@ -66,6 +66,7 @@ public class MenuBotones extends Fragment {
         boton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Fragment frag = TestDaltonismo1.newInstance("BAS", 1);
                 androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_menuBotones_to_testDaltonismo1);
             }
         });
