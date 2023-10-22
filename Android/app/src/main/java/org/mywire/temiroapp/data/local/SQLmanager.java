@@ -25,7 +25,7 @@ public class SQLmanager {
         dblite = conex.getWritableDatabase();
         try {
             dblite.execSQL("insert into TipoTest values (0,'No definido')");
-            dblite.execSQL("insert into TipoTest values (1,'Imagen puntos')");
+            dblite.execSQL("insert into TipoTest values (1,'Imagen de puntos')");
             dblite.execSQL("insert into Test values (1,'Daltonismo Básico',3)");
             dblite.execSQL("insert into Test values (2,'Daltonismo Avanzado',6)");
             dblite.execSQL("insert into PasoTest values (1,1,1,'Primer imagen',30)");

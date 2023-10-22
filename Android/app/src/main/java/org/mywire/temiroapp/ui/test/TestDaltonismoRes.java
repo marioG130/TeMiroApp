@@ -6,14 +6,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-
 import org.mywire.temiroapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link TestDaltonismo4#newInstance} factory method to create an instance of this fragment.
+ * Use the {@link TestDaltonismoRes#newInstance} factory method to create an instance of this fragment.
  */
-public class TestDaltonismo4 extends Fragment {
+public class TestDaltonismoRes extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -28,7 +27,7 @@ public class TestDaltonismo4 extends Fragment {
     Button boton2;
     Button boton3;
 
-    public TestDaltonismo4() {
+    public TestDaltonismoRes() {
         // Required empty public constructor
     }
 
@@ -40,8 +39,8 @@ public class TestDaltonismo4 extends Fragment {
      * @return A new instance of fragment TestDaltonismo4.
      */
     // TODO: Rename and change types and number of parameters
-    public static TestDaltonismo4 newInstance(String param1, String param2) {
-        TestDaltonismo4 fragment = new TestDaltonismo4();
+    public static TestDaltonismoRes newInstance(String param1, String param2) {
+        TestDaltonismoRes fragment = new TestDaltonismoRes();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -60,7 +59,7 @@ public class TestDaltonismo4 extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View vista = inflater.inflate(R.layout.test_frag_daltonismo4, container, false);
+        View vista = inflater.inflate(R.layout.test_frag_daltonismo_res, container, false);
         return vista;
     }
 

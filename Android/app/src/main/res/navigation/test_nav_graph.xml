@@ -32,6 +32,9 @@
         android:label="test_frag_daltonismo1"
         tools:layout="@layout/test_frag_daltonismo1" >
         <action
+            android:id="@+id/action_testDaltonismo1_self"
+            app:destination="@id/testDaltonismo1" />
+        <action
             android:id="@+id/action_testDaltonismo1_to_testDaltonismo2"
             app:destination="@id/testDaltonismo2" />
     </fragment>
@@ -44,6 +47,16 @@
             android:id="@+id/action_testAgudeza1_to_testAgudeza2"
             app:destination="@id/testAgudeza2" />
     </fragment>
+    <fragment
+        android:id="@+id/testDaltonismoR"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismoRes"
+        android:label="test_frag_daltonismo_res"
+        tools:layout="@layout/test_frag_daltonismo_res" />
+    <fragment
+        android:id="@+id/testAgudeza2"
+        android:name="org.mywire.temiroapp.ui.test.TestAgudeza2"
+        android:label="test_frag_agudeza2"
+        tools:layout="@layout/test_frag_agudeza2" />
     <fragment
         android:id="@+id/testDaltonismo2"
         android:name="org.mywire.temiroapp.ui.test.TestDaltonismo2"
@@ -59,18 +72,8 @@
         android:label="test_frag_daltonismo3"
         tools:layout="@layout/test_frag_daltonismo3" >
         <action
-            android:id="@+id/action_testDaltonismo3_to_testDaltonismo4"
-            app:destination="@id/testDaltonismo4" />
+            android:id="@+id/action_testDaltonismo3_to_testDaltonismoR"
+            app:destination="@id/testDaltonismoR" />
     </fragment>
-    <fragment
-        android:id="@+id/testDaltonismo4"
-        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo4"
-        android:label="test_frag_daltonismo4"
-        tools:layout="@layout/test_frag_daltonismo4" />
-    <fragment
-        android:id="@+id/testAgudeza2"
-        android:name="org.mywire.temiroapp.ui.test.TestAgudeza2"
-        android:label="test_frag_agudeza2"
-        tools:layout="@layout/test_frag_agudeza2" />
 
 </navigation>
