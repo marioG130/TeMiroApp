@@ -10,11 +10,16 @@ import android.widget.Toast;
 import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.data.prefs.PreferencesHelper;
+import org.mywire.temiroapp.data.remote.ApiService;
 import org.mywire.temiroapp.model.User;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -30,14 +35,71 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void iniciarSesion(View view) {
+
+        //Modificacion para StoreActivity
+        String nombre = String.valueOf(usuario.getText());
+
+        // Realiza la autenticación del usuario y obtén su nombre de usuario
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://temiro.mywire.org:8000/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+
+        //se obtiene el nombre de usuario de la API de usuario
+        ApiService usuarioApiService = retrofit.create(ApiService.class);
+        Call<List<User>> usuarioCall = usuarioApiService.getUsuarios();
+
+        PreferencesHelper prefs = new PreferencesHelper(LoginActivity.this);
+        prefs.setUsuarioRegistrado(true);
+        prefs.setNombreUsuario(nombre);
+
+        usuarioCall.enqueue(new Callback<List<User>>() {
+            @Override
+            public void onResponse(Call<List<User>> call, Response<List<User>> response) {
+                if (response.isSuccessful()) {
+                    List<User> usuarios = response.body();
+
+                    // Busca el nombre de usuario en la lista de usuarios
+                    String nombre = String.valueOf(usuario.getText());
+                    int idCliente = -1; // El valor -1 indica que no se encontró un cliente correspondiente
+
+                    for (User usuario : usuarios) {
+                        if (usuario.getUsuario().equals(nombre)) {
+                            idCliente = usuario.getIdusuario();
+                            break;
+                        }
+                    }
+
+                    if (idCliente > 0) {
+                        PreferencesHelper prefs = new PreferencesHelper(LoginActivity.this);
+                        prefs.setUsuarioRegistrado(true);
+                        prefs.setNombreUsuario(nombre);
+                        prefs.setIdUsuario(idCliente);
+
+                        Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Toast.makeText(LoginActivity.this, "Error en usuario o contraseña!", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(LoginActivity.this, "Error en la solicitud de usuarios: " + response.message(), Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<User>> call, Throwable t) {
+                Toast.makeText(LoginActivity.this, "Error en la solicitud de usuarios: " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+                          // codigo original
         int id;
-        String nombre, clave;
+        String  clave;
         boolean verificado;
 
-        if(TextUtils.isEmpty(usuario.getText().toString()) || TextUtils.isEmpty(contrasena.getText().toString())){
+        if (TextUtils.isEmpty(usuario.getText().toString()) || TextUtils.isEmpty(contrasena.getText().toString())) {
             Toast.makeText(LoginActivity.this, "Ingrese un nombre de usuario y contraseña", Toast.LENGTH_SHORT).show();
-
-        }else{
+        } else {
             User loginRequest = new User();
             loginRequest.setUsuario(usuario.getText().toString());
             loginRequest.setPassword(contrasena.getText().toString());
@@ -46,25 +108,21 @@ public class LoginActivity extends AppCompatActivity {
 
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
-
         }
-
 
         // Falta verificar el usuario/password y traer el id
-        nombre = String.valueOf(usuario.getText());
+        String nombreUser = String.valueOf(usuario.getText());
         clave = String.valueOf(contrasena.getText());
         id = 1;
-        verificado = (!nombre.isEmpty());// modificar
-        if(clave.isEmpty()){
+        verificado = (!nombre.isEmpty()); // modificar
+        if (clave.isEmpty()) {
             usuario.setError("Debe ingresar su nombre de usuario");
         }
-        if(nombre.isEmpty()){
+        if (nombre.isEmpty()) {
             contrasena.setError("Debe ingresar su contraseña");
         }
 
-
-
-        PreferencesHelper prefs = new PreferencesHelper(this);
+        prefs = new PreferencesHelper(this);
         if (verificado) {
             prefs.setUsuarioRegistrado(true);
             prefs.setNombreUsuario(nombre);
@@ -73,32 +131,28 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(LoginActivity.this, "Error en usuario o contraseña !", Toast.LENGTH_SHORT).show();
             prefs.setUsuarioRegistrado(false);
         }
-
     }
 
-
-    public void loginUser(User loginRequest){
+    public void loginUser(User loginRequest) {
         Call<UserRequest> loginResponseCall = UserApiClient.getService().loginUser(loginRequest);
         loginResponseCall.enqueue(new Callback<UserRequest>() {
             @Override
             public void onResponse(Call<UserRequest> call, Response<UserRequest> response) {
-                if(response.isSuccessful()){
+                if (response.isSuccessful()) {
                     UserRequest loginResponse = response.body();
                     startActivity(new Intent(LoginActivity.this, MainActivity.class).putExtra("data", loginResponse));
                     finish();
-                }else{
+                } else {
                     String message = "Se ha producido un error";
-                    Toast.makeText(LoginActivity.this,message,Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, message, Toast.LENGTH_LONG).show();
                 }
             }
 
             @Override
             public void onFailure(Call<UserRequest> call, Throwable t) {
-
-                Toast.makeText(LoginActivity.this, "Inicio de Sesión exitoso",Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, "Inicio de Sesión exitoso", Toast.LENGTH_LONG).show();
             }
         });
-
     }
 
     public void iniciarRegistro(View view) {
@@ -111,4 +165,5 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(act);
     }
 
+}
 }

@@ -11,4 +11,8 @@ public interface PreferencesIntf {
     int getIdUsuario();
     void setIdUsuario(int id);
 
+    int getIdCliente();
+
+    void setIdCliente(int idCliente);
+
 }
