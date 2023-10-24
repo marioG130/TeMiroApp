@@ -6,4 +6,121 @@
     android:layout_height="match_parent"
     tools:context=".ui.quote.TurnoAgendadoActivity">
 
+    <TextView
+        android:id="@+id/turnoReservadoTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="TURNO RESERVADO"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/detallesTurno"
+        android:layout_width="389dp"
+        android:layout_height="163dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="249dp"
+        android:layout_marginBottom="455dp"
+        app:cardBackgroundColor="#C8CACC"
+        app:cardCornerRadius="30dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:id="@+id/alineandoTexto"
+            android:layout_width="279dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/temaTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEMA:"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/fechaTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FECHA:"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/horaTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HORA:"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/teEsperamosTurnero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
+        android:text="¡TE ESPERAMOS!"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagenCalendarioReservado"
+        android:layout_width="220dp"
+        android:layout_height="232dp"
+        android:layout_marginBottom="190dp"
+        android:src="@tools:sample/avatars"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/quote_reserva_hecha" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="116dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="CANCELAR TURNO"
+        android:textSize="24sp"
+        android:onClick="turnoCancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolverHome"
+        android:layout_width="334dp"
+        android:layout_height="66dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/buttonColor"
+        android:text="VOLVER AL HOME"
+        android:textSize="24sp"
+        android:onClick="volverAMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

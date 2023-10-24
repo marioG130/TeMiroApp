@@ -15,8 +15,15 @@
         android:theme="@style/Theme.TeMiroApp"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+
+        <activity
+            android:name=".ui.quote.TurnoCanceladoActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.quote.TurnoAgendadoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.quote.TurneroActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -38,9 +45,6 @@
             android:exported="false" />
         <activity
             android:name=".ui.product.ProductDetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.quote.QuoteTurnero"
             android:exported="false" />
         <activity
             android:name=".ui.store.StoreActivity"
