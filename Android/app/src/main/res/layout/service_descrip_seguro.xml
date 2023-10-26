@@ -12,7 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="380dp"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/service_lentesrotos" />
+        android:src="@drawable/service_lentesrotos"
+        android:contentDescription="Foto de un par de lentes con una pata y un cristal rotos"/>
 
     <!-- Descripción del servicio -->
 
@@ -23,15 +24,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center"
+        android:justificationMode="inter_word"
+        android:textAlignment="textStart"
+        android:textSize="18dp"
+
         android:text="Aunque las lentes que más se utilizan últimamente son las orgánicas (difíciles de romper),cuando te compres unas gafas graduadas en TemiroOptica, además de la garantía propia que tendrán tus gafas,llevarás incluido un seguro de rotura para los cristales.Este seguro de rotura es totalmente gratuito y siempre está incluido en la compra de tus gafas graduadas." />
 
     <Button
         android:id="@+id/btnConsulta1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/botonesMenu"
         android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@color/buttonColor"
         android:text="Formulario de Consulta" />
 
 </LinearLayout>

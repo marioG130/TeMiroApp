@@ -9,9 +9,8 @@
 
     <ImageButton
         android:id="@+id/iconoUsuario"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
         android:adjustViewBounds="true"
         android:backgroundTint="@color/white"
         android:onClick="iniciarUsuario"
@@ -19,11 +18,12 @@
         android:src="@drawable/main_icon_usuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/iconoHome"
-        app:layout_constraintHorizontal_bias="0.031"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024"
-        tools:srcCompat="@drawable/main_icon_usuario" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:srcCompat="@drawable/main_icon_usuario"
+        android:contentDescription="Icono de usuario para acceder a la configuración de perfil"/>
 
     <TextView
         android:id="@+id/textoBienvenido"
@@ -57,14 +57,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="¿Qué deseas hacer?"
-        android:textSize="20sp"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="385dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:gravity="center"
         android:orientation="vertical"
@@ -74,57 +74,46 @@
 
         <Button
             android:id="@+id/botonTurno"
-            android:layout_width="334dp"
-            android:layout_height="66dp"
-            android:backgroundTint="#16CAF0"
             android:onClick="iniciarTurnero"
             android:text="SACAR TURNO"
-            android:textSize="24sp" />
+            android:layout_margin="4dp"
+            style="@style/botonesMenu"
+            />
 
         <Button
             android:id="@+id/botonPruebas"
-            android:layout_width="334dp"
-            android:layout_height="66dp"
-            android:backgroundTint="#16CAF0"
             android:onClick="iniciarPruebas"
             android:text="PRUEBAS DE VISIÓN"
-            android:textSize="24sp" />
+            android:layout_margin="4dp"
+            style="@style/botonesMenu" />
 
         <Button
             android:id="@+id/botonEjercicios"
-            android:layout_width="334dp"
-            android:layout_height="66dp"
-            android:backgroundTint="#16CAF0"
+            android:layout_margin="4dp"
             android:onClick="iniciarEjercicios"
             android:text="EJERCICIOS DE VISIÓN"
-            android:textSize="24sp" />
+            style="@style/botonesMenu"  />
 
         <Button
             android:id="@+id/btnVerCatalogo"
-            android:layout_width="334dp"
-            android:layout_height="66dp"
-            android:backgroundTint="#16CAF0"
+            android:layout_margin="4dp"
             android:onClick="iniciarProdServ"
             android:text="CATÁLOGO/SERVICIOS"
-            android:textSize="24sp" />
+            style="@style/botonesMenu"/>
 
         <Button
             android:id="@+id/botonEstadoDeCompra"
-            android:layout_width="334dp"
-            android:layout_height="66dp"
-            android:backgroundTint="#16CAF0"
+            android:layout_margin="4dp"
             android:onClick="iniciarStore"
             android:text="MIS PEDIDOS"
-            android:textSize="24sp" />
+            style="@style/botonesMenu"/>
 
         <Button
             android:id="@+id/botonContacto"
-            android:layout_width="334dp"
-            android:layout_height="66dp"
-            android:backgroundTint="#16CAF0"
+            android:layout_margin="4dp"
             android:onClick="iniciarContacto"
             android:text="CONTACTO"
-            android:textSize="24sp" />
+            style="@style/botonesMenu"/>
     </LinearLayout>
 
     <ImageView
@@ -151,6 +140,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127" />
+        app:layout_constraintVertical_bias="0.127"
+        android:contentDescription="Logo de la aplicación TeMiro APP"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

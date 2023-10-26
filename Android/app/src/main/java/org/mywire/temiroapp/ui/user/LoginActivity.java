@@ -12,6 +12,8 @@ import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.data.prefs.PreferencesHelper;
 import org.mywire.temiroapp.data.remote.ApiService;
 import org.mywire.temiroapp.model.User;
+import org.mywire.temiroapp.ui.main.SplashScreenMenu;
+
 import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;

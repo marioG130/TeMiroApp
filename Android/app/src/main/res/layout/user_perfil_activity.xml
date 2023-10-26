@@ -10,7 +10,7 @@
         android:id="@+id/linearLayout5"
         android:layout_width="406dp"
         android:layout_height="254dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="54dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -24,7 +24,8 @@
             android:layout_marginLeft="110dp"
             android:layout_marginTop="30dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/main_icon_usuario" />
+            android:src="@drawable/main_icon_usuario"
+            android:contentDescription="Imagen de perfil de usuario"/>
 
         <TextView
             android:id="@+id/textView10"
@@ -40,17 +41,20 @@
         android:id="@+id/imageView10"
         android:layout_width="63dp"
         android:layout_height="47dp"
+        android:onClick="iniciarHome"
         android:src="@drawable/main_icon_home"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="botón para ir a la pantalla Inicio"/>
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="431dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,13 +116,10 @@
 
         <Button
             android:id="@+id/btn_cambios_perfil_us"
-            style="@style/botonesMenu"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="50dp"
             android:onClick="iniciarHome"
-            android:text="Guardar Cambios" />
+            android:text="Guardar Cambios"
+            style="@style/botonesMenu"
+            />
 
     </LinearLayout>
 

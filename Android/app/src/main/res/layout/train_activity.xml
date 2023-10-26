@@ -22,40 +22,41 @@
         <TextView
             android:id="@+id/descripcionTextView"
             android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:justificationMode="inter_word"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <VideoView
             android:id="@+id/videoView"
             android:layout_width="match_parent"
+            android:layout_gravity="center"
             android:layout_height="180dp" />
 
         <Button
             android:id="@+id/parpadeoButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:gravity="center_vertical"
-            android:text="Parpadeo" />
+            android:text="Parpadeo"
+            style="@style/botonesMenu"/>
 
         <Button
             android:id="@+id/cuerdaButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_below="@+id/parpadeoButton"
             android:layout_gravity="center"
-            android:layout_marginTop="80dp"
-            android:text="Cuerda de Brock" />
+            android:layout_marginTop="40dp"
+            android:text="Cuerda de Brock"
+            style="@style/botonesMenu"/>
 
         <Button
             android:id="@+id/movimientoButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_below="@+id/parpadeoButton"
             android:layout_gravity="center"
-            android:layout_marginTop="80dp"
-            android:text="Movimientos Oculares" />
+            android:layout_marginTop="40dp"
+            android:text="Movimientos Oculares"
+            style="@style/botonesMenu"/>
 
         <TextView
             android:id="@+id/mensajeParpadeo"

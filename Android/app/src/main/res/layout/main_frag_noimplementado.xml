@@ -17,16 +17,14 @@
 
     <Button
         android:id="@+id/botonVolverF"
-        android:layout_width="117dp"
-        android:layout_height="wrap_content"
+        style="@style/botonesMenu"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
         android:layout_marginBottom="68dp"
         android:layout_weight="1"
-        android:backgroundTint="@color/buttonColor"
         android:contentDescription="@string/volver"
         android:insetBottom="4dp"
         android:text="@string/volver"
-        android:textColor="@color/white" />
+         />
 
 </FrameLayout>

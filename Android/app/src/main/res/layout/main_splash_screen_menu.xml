@@ -12,7 +12,8 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/splash_background" />
+        app:srcCompat="@drawable/splash_background"
+        android:contentDescription="Imagen de fondo con el logo de la app en el centro, rodeado de fotos de personas probándose y usando lentes."           />
 
     <LinearLayout
         android:id="@+id/ll_splash_enter"
@@ -23,7 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="462dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="5dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="30dp">
@@ -34,7 +35,8 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/splash_entericon" />
+            app:srcCompat="@drawable/splash_entericon"
+            android:contentDescription="botón con flecha de ingreso"/>
 
         <TextView
             android:id="@+id/texto_no_imp"
@@ -42,24 +44,27 @@
             android:layout_height="wrap_content"
             android:text="Ingresar"
             android:textAlignment="center"
-            android:textColor="@color/buttonColor"
+            android:textColor="@color/greydark"
             android:textSize="30dp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_splash_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="150dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
         android:layout_marginBottom="24dp"
         android:layout_weight="1"
         android:backgroundTint="@color/buttonColor"
         android:text="Login"
+        android:textColor="@color/greydark"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:iconPadding="0dp"
         app:iconSize="0dp" />
 
