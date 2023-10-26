@@ -4,8 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.TimePicker;
+import android.widget.Toast;
+
 import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
+
+import java.util.Calendar;
 
 public class TurneroActivity extends AppCompatActivity {
 
