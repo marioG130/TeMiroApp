@@ -11,7 +11,7 @@ import org.mywire.temiroapp.data.local.SQLmanager;
 import org.mywire.temiroapp.data.prefs.PreferencesHelper;
 import org.mywire.temiroapp.ui.main.ContactoUno;
 import org.mywire.temiroapp.ui.product.ProductsServicesPpal;
-import org.mywire.temiroapp.ui.quote.QuoteTurnero;
+import org.mywire.temiroapp.ui.quote.TurneroActivity;
 import org.mywire.temiroapp.ui.store.StoreActivity;
 import org.mywire.temiroapp.ui.test.TestPrincipal;
 import org.mywire.temiroapp.ui.train.TrainActivity1;
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Epica 5 - Turnero de Servicios --------------------------------------------------------------
     public void iniciarTurnero(View view) {
-        Intent act = new Intent(this, QuoteTurnero.class);
+        Intent act = new Intent(this, TurneroActivity.class);
         startActivity(act);
     }
 
