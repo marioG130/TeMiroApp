@@ -2,8 +2,11 @@ package org.mywire.temiroapp.ui.quote;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
+import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
 
 public class TurnoCanceladoActivity extends AppCompatActivity {
