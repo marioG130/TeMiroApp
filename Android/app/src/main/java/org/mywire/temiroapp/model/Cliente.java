@@ -1,6 +1,7 @@
 package org.mywire.temiroapp.model;
 
 public class Cliente {
+
     private int idcliente;
     private int idusuario;
     private String apellido;
@@ -12,7 +13,6 @@ public class Cliente {
     private String telefono;
     private String celular;
     private String fechanac;
-
 
     public Cliente(int idcliente, int idusuario, String apellido, String nombre, int dni, String direccion, String email, int idciudad, String telefono, String celular, String fechanac) {
         this.idcliente = idcliente;
@@ -71,4 +71,5 @@ public class Cliente {
     public String getFechanac() {
         return fechanac;
     }
+
 }
