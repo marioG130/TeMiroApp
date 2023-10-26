@@ -1,15 +1,20 @@
 package org.mywire.temiroapp.ui.train;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import org.mywire.temiroapp.R;
 import android.net.Uri;
 import android.widget.VideoView;
 
 public class TrainActivity1 extends AppCompatActivity {
+    boolean esUsuarioRegistrado;
+    String nombreUsuario;
+    int idUsuario;
 
     private Button parpadeoButton;
     private Button cuerdaButton;
@@ -19,6 +24,7 @@ public class TrainActivity1 extends AppCompatActivity {
     private TextView mensajeMovimiento;
     private VideoView videoView;
     private TextView descripcionTextView;
+    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,64 +40,88 @@ public class TrainActivity1 extends AppCompatActivity {
         videoView = findViewById(R.id.videoView);
         descripcionTextView = findViewById(R.id.descripcionTextView);
 
-        //recordar la carpeta res/raw con los 3 videos
-        // Configurar la fuente del video para Parpadeo
-        final String videoPathParpadeo = "android.resource://" + getPackageName() + "/" + R.raw.parpadeo_ejer;
+        Button loginButton = findViewById(R.id.loginButton);
+        Button registroButton = findViewById(R.id.registroButton);
+
         parpadeoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Mostrar mensaje de construcción para el ejercicio Parpadeo
-                mensajeParpadeo.setVisibility(View.VISIBLE);
-                
-                // Configurar el texto de descripción para el ejercicio Parpadeo
-                descripcionTextView.setText(getString(R.string.descripcion_parpadeo));
-                
-                // Configurar la fuente del video y empezar la reproducción
-                videoView.setVideoURI(Uri.parse(videoPathParpadeo));
-                videoView.start();
+                if (validar()) {
+                    // Mostrar el video de Parpadeo
+                    mensajeParpadeo.setVisibility(View.VISIBLE);
+                    descripcionTextView.setText(getString(R.string.descripcion_parpadeo));
+                    // Reemplaza "videoUrlParpadeo" por la URL correcta del video
+                    String videoUrlParpadeo = "http://temiro.mywire.org:8000/media/video/parpadeo_1.mp4";
+                    videoView.setVideoURI(Uri.parse(videoUrlParpadeo));
+                    videoView.start();
+                } else {
+                    // Redirigir al usuario a la actividad de inicio de sesión
+                    Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
-        // Configurar la fuente del video para cuerda
-        final String videoPathCuerda = "android.resource://" + getPackageName() + "/" + R.raw.cuerda_ejer;
         cuerdaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Mostrar mensaje de construcción para el ejercicio Cuerda
-                mensajeCuerda.setVisibility(View.VISIBLE);
-                
-                // Configurar el texto de descripción para el ejercicio Cuerda
-                descripcionTextView.setText(getString(R.string.descripcion_cuerda));
-                
-                // Configurar la fuente del video y empezar la reproducción
-                videoView.setVideoURI(Uri.parse(videoPathCuerda));
-                videoView.start();
+                if (validar()) {
+                    // Mostrar el video de Cuerda
+                    mensajeCuerda.setVisibility(View.VISIBLE);
+                    descripcionTextView.setText(getString(R.string.descripcion_cuerda));
+                    // Reemplaza "videoUrlCuerda" por la URL correcta del video
+                    String videoUrlCuerda = "http://temiro.mywire.org:8000/media/video/enfoque_1.mp4";
+                    videoView.setVideoURI(Uri.parse(videoUrlCuerda));
+                    videoView.start();
+                } else {
+                    // Redirigir al usuario a la actividad de inicio de sesión
+                    Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
-        // Configurar la fuente del video para Movimientos
-        final String videoPathMovimiento = "android.resource://" + getPackageName() + "/" + R.raw.movimiento_ejer;
         movimientoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Mostrar mensaje de construcción para el ejercicio Movimientos
-                mensajeMovimiento.setVisibility(View.VISIBLE);
-                
-                // Configurar el texto de descripción para el ejercicio Movimientos
-                descripcionTextView.setText(getString(R.string.descripcion_movimiento));
-                
-                // Configurar la fuente del video y empezar la reproducción
-                videoView.setVideoURI(Uri.parse(videoPathMovimiento));
-                videoView.start();
+                if (validar()) {
+                    // Mostrar el video de Movimiento
+                    mensajeMovimiento.setVisibility(View.VISIBLE);
+                    descripcionTextView.setText(getString(R.string.descripcion_movimiento));
+                    // Reemplaza "videoUrlMovimiento" por la URL correcta del video
+                    String videoUrlMovimiento = "http://temiro.mywire.org:8000/media/video/movimiento_1.mp4";
+                    videoView.setVideoURI(Uri.parse(videoUrlMovimiento));
+                    videoView.start();
+                } else {
+                    // Redirigir al usuario a la actividad de inicio de sesión
+                    Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
+
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirigir al usuario a la actividad de inicio de sesión
+                Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        registroButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Redirigir al usuario a la actividad de registro
+                Intent intent = new Intent(TrainActivity1.this, RegistroActivity.class);
+                startActivity(intent);
             }
         });
     }
 
-    // Agregar los métodos onPause() y onDestroy() para gestionar el ciclo de vida del VideoView
     @Override
     protected void onPause() {
         super.onPause();
-        // Pausar la reproducción del video si está en curso
         if (videoView.isPlaying()) {
             videoView.pause();
         }
@@ -100,7 +130,10 @@ public class TrainActivity1 extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // Liberar recursos asociados al VideoView
         videoView.stopPlayback();
     }
+
+   /* private boolean validar() {
+        return usuarioHaIniciadoSesion;
+    } */
 }
