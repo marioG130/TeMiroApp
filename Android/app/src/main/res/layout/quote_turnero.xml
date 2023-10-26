@@ -65,13 +65,9 @@
 
     <Button
         android:id="@+id/btnReservar"
-        android:layout_width="334dp"
-        android:layout_height="66dp"
-        android:layout_centerHorizontal="true"
+        style="@style/botonesMenu"
         android:layout_marginBottom="116dp"
-        android:backgroundTint="@color/buttonColor"
         android:text="RESERVAR"
-        android:textSize="24sp"
         android:onClick="turnoReservar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,13 +76,9 @@
 
     <Button
         android:id="@+id/btnVolverHome"
-        android:layout_width="334dp"
-        android:layout_height="66dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/buttonColor"
+        style="@style/botonesMenu"
+        android:layout_marginBottom="35dp"
         android:text="VOLVER AL HOME"
-        android:textSize="24sp"
         android:onClick="volverAMenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

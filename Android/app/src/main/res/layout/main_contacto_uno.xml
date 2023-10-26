@@ -126,12 +126,9 @@
 
     <Button
         android:id="@+id/botonVolverHomeContacto"
-        android:layout_width="334dp"
-        android:layout_height="66dp"
+        style="@style/botonesMenu"
         android:layout_marginBottom="81dp"
-        android:backgroundTint="#16CAF0"
         android:text="ENVIAR"
-        android:textSize="24sp"
         android:onClick="enviarConsulta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

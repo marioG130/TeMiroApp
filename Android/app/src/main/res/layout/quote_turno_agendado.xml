@@ -95,13 +95,10 @@
 
     <Button
         android:id="@+id/btnCancelar"
-        android:layout_width="334dp"
-        android:layout_height="66dp"
+        style="@style/botonesMenu"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="116dp"
-        android:backgroundTint="@color/buttonColor"
         android:text="CANCELAR TURNO"
-        android:textSize="24sp"
         android:onClick="turnoCancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,13 +107,10 @@
 
     <Button
         android:id="@+id/btnVolverHome"
-        android:layout_width="334dp"
-        android:layout_height="66dp"
+        style="@style/botonesMenu"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="48dp"
-        android:backgroundTint="@color/buttonColor"
         android:text="VOLVER AL HOME"
-        android:textSize="24sp"
         android:onClick="volverAMenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -61,8 +61,8 @@
 
     <Button
         android:id="@+id/btnEnviar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/botonesMenu"
+        android:layout_gravity="center"
         android:backgroundTint="@color/buttonColor"
         android:text="Enviar" />
 

@@ -109,11 +109,10 @@
         <Button
             android:id="@+id/btn_registro"
             style="@style/botonesMenu"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
             android:text="Registrarse"
-            android:textSize="20sp" />
+             />
     </LinearLayout>
 
     <TextView
@@ -145,14 +144,15 @@
 
     <ImageView
         android:id="@+id/btn_volverLogin"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginTop="4dp"
         android:onClick="volverLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
+        app:srcCompat="@drawable/main_back_button_icon"
+        android:contentDescription="boton para volver a la pantalla anterior"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

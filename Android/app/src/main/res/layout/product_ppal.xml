@@ -35,18 +35,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-            <Button
+            <ImageView
                 android:id="@+id/botonVolverF"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/buttonColor"
-                android:insetBottom="4dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="4dp"
                 android:onClick="volverStore"
-                android:text="Volver"
-                android:textColor="@color/white"
-                app:iconPadding="8dp"
-                app:iconSize="18dp" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/main_back_button_icon"
+                android:contentDescription="Botón para volver a la pantalla anterior"/>
 
             <TextView
                 android:id="@+id/textView3"
@@ -56,7 +56,7 @@
                 android:layout_weight="1"
                 android:background="@color/white"
                 android:fontFamily="sans-serif-black"
-                android:text="productos"
+                android:text="Productos"
                 android:textAlignment="center"
                 android:textColor="@color/buttonColor"
                 android:textSize="40sp"
@@ -118,6 +118,7 @@
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
                         android:text="Ver Mas"
+                        android:textColor="@color/greydark"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent" />
 
@@ -169,6 +170,7 @@
                         android:backgroundTint="@color/buttonColor"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
 
 
@@ -220,6 +222,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
 
 
@@ -270,6 +273,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
 
 
@@ -320,6 +324,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
 
 
@@ -370,6 +375,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/greydark"
                 android:text="Ver Mas" />
         </LinearLayout>
         </LinearLayout>
@@ -418,6 +424,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
                 </LinearLayout>
             </LinearLayout>
@@ -466,6 +473,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
                 </LinearLayout>
             </LinearLayout>
@@ -514,6 +522,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
                 </LinearLayout>
             </LinearLayout>
@@ -562,6 +571,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@color/buttonColor"
+                        android:textColor="@color/greydark"
                         android:text="Ver Mas" />
                 </LinearLayout>
             </LinearLayout>
