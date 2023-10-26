@@ -3,6 +3,7 @@ package org.mywire.temiroapp.model;
 import org.mywire.temiroapp.model.Cliente;
 
 public class Venta {
+
     private int idventa;
     private int idvendedor;
     private int idcliente;
@@ -68,6 +69,7 @@ public class Venta {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
@@ -75,6 +77,5 @@ public class Venta {
     public Cliente getCliente() {
         return cliente;
     }
-
 
 }

@@ -1,8 +1,8 @@
-package org.mywire.temiroapp.ui.user;
+package org.mywire.temiroapp.util;
 
 import java.io.Serializable;
 
-public class UserRequest implements Serializable {
+public class GenericRequest implements Serializable {
 
     private String message;
 
@@ -13,4 +13,5 @@ public class UserRequest implements Serializable {
     public void setMessage(String message) {
         this.message = message;
     }
+
 }

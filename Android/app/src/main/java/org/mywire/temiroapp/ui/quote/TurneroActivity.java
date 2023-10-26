@@ -3,16 +3,13 @@ package org.mywire.temiroapp.ui.quote;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
-
 import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
-
 import java.util.Calendar;
 
 public class TurneroActivity extends AppCompatActivity {
@@ -36,13 +33,10 @@ public class TurneroActivity extends AppCompatActivity {
             String temaCita = editTextTema.getText().toString();
 
             if (validarFechaHora() && !temaCita.isEmpty()) {
-
                 guardarReserva(temaCita);
                 Toast.makeText(TurneroActivity.this, "Reserva guardada", Toast.LENGTH_SHORT).show();
-
                 Intent act = new Intent(TurneroActivity.this, TurnoAgendadoActivity.class);
                 startActivity(act);
-
             } else {
                 Toast.makeText(TurneroActivity.this, "Por favor, completa todos los campos correctamente", Toast.LENGTH_SHORT).show();
             }
@@ -63,12 +57,10 @@ public class TurneroActivity extends AppCompatActivity {
             Toast.makeText(this, "Por favor, elija un día entre lunes y viernes", Toast.LENGTH_SHORT).show();
             return false;
         }
-
         if (hourOfDay < 9 || hourOfDay >= 18) {
             Toast.makeText(this, "Por favor, elija una hora entre las 9am y las 6pm", Toast.LENGTH_SHORT).show();
             return false;
         }
-
         return true;
     }
 
@@ -76,4 +68,5 @@ public class TurneroActivity extends AppCompatActivity {
         // Aquí implementar la lógica para guardar la reserva con el tema, la fecha y la hora seleccionada
         // Usar SharedPreferences o la base de datos para almacenar la información
     }
+
 }

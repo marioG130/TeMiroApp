@@ -1,6 +1,7 @@
 package org.mywire.temiroapp.model;
 
 public class User {
+
     private int idusuario;
     private int tipousuario;
     private String usuario;
@@ -55,4 +56,5 @@ public class User {
     public void setAceptatc(int aceptatc) {
         this.aceptatc = aceptatc;
     }
+
 }

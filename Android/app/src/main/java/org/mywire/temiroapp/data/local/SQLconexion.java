@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class SQLconexion extends SQLiteOpenHelper {
 
     private static final String DATABASE_FILE = "temiroapp.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     public SQLconexion(Context context) {
         super(context, DATABASE_FILE, null, DATABASE_VERSION);
@@ -127,7 +127,14 @@ public class SQLconexion extends SQLiteOpenHelper {
         switch (oldVersion) {
             case 1:
                 // para pasar a la version 2
-
+                db.execSQL("CREATE TABLE TurnoReservado ( "+
+                        " idUsuario INTEGER NOT NULL, "+
+                        " fechaTurno TEXT NOT NULL, "+
+                        " horaTurno TEXT NOT NULL, "+
+                        " tema TEXT NOT NULL, "+
+                        " PRIMARY KEY (idUsuario, fechaTurno), "+
+                        " FOREIGN KEY (idUsuario) REFERENCES UsuarioRegistrado(idUsuario) "+
+                        " ) ");
             case 2:
                 // para pasar a la version 3
 
