@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/service_descrip_taller"
-        android:name="org.mywire.temiroapp.ui.service.Service_descrip_taller"
+        android:name="org.mywire.temiroapp.ui.service.ServiceDescripTaller"
         android:label="fragment_service_descrip_taller"
         tools:layout="@layout/service_descrip_taller" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/service_descrip_seguro"
-        android:name="org.mywire.temiroapp.ui.service.service_descrip_seguro"
+        android:name="org.mywire.temiroapp.ui.service.ServiceDescripSeguro"
         android:label="fragment_service_descrip_seguro"
         tools:layout="@layout/service_descrip_seguro" >
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/service_descrip_consulta_oftal"
-        android:name="org.mywire.temiroapp.ui.service.Service_descrip_consulta_oftal"
+        android:name="org.mywire.temiroapp.ui.service.ServiceDescripConsultaOftal"
         android:label="fragment_service_descrip_consulta_oftal"
         tools:layout="@layout/service_descrip_consulta_oftal" >
         <action
@@ -70,7 +70,7 @@
     </fragment>
     <fragment
         android:id="@+id/service_Formu_Consulta"
-        android:name="org.mywire.temiroapp.ui.service.Service_Formu_Consulta"
+        android:name="org.mywire.temiroapp.ui.service.ServiceFormuConsulta"
         android:label="fragment_service__formu__consulta"
         tools:layout="@layout/service_formu_consulta" />
     <fragment

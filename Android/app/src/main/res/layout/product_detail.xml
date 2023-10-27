@@ -9,10 +9,21 @@
     tools:context=".ui.product.ProductDetailActivity"
     tools:ignore="ExtraText">
 
+    <fragment
+        android:id="@+id/topmenu"
+        android:name="org.mywire.temiroapp.ui.main.TopMenuFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/main_frag_top_menu"></fragment>
+
     <ImageView
         android:id="@+id/productImage"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginTop="20dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_background"
         android:contentDescription="Imagen del producto" />

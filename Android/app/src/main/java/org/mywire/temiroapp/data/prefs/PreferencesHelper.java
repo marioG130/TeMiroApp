@@ -8,6 +8,7 @@ public class PreferencesHelper implements PreferencesIntf {
     private static final String PREF_USUARIO_REGISTRADO = "PREF_USUARIO_REGISTRADO";
     private static final String PREF_USUARIO_NOMBRE = "PREF_USUARIO_NOMBRE";
     private static final String PREF_USUARIO_ID = "PREF_USUARIO_ID";
+    private static final String PREF_TIPO_DALTON1 = "PREF_TIPO_DALTON1";
 
     private final SharedPreferences appPref;
 
@@ -46,6 +47,17 @@ public class PreferencesHelper implements PreferencesIntf {
     @Override
     public void setIdUsuario(int id) {
         appPref.edit().putInt(PREF_USUARIO_ID, id).apply();
+    }
+
+    @Override
+    public String getTipoDalton1() {
+        String tipo = appPref.getString(PREF_TIPO_DALTON1,"");
+        return tipo;
+    }
+
+    @Override
+    public void setTipoDalton1(String tipo) {
+        appPref.edit().putString(PREF_TIPO_DALTON1, tipo).apply();
     }
 
 }

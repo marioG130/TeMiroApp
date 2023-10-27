@@ -12,17 +12,21 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.data.prefs.PreferencesHelper;
-import org.mywire.temiroapp.model.Test;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link TestDaltonismo1#newInstance} factory method to create an instance of this fragment.
+ * Use the {@link TestDaltonismo3#newInstance} factory method to create an instance of this fragment.
  */
-public class TestDaltonismo1 extends Fragment {
+public class TestDaltonismo4 extends Fragment {
 
-    private static final String ARG_TIPO_TEST = "ARG_TIPO_TEST";
-    private static final String ARG_PASO_TEST = "ARG_PASO_TEST";
+    // TODO: Rename parameter arguments, choose names that match
+    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+    private static final String ARG_PARAM1 = "param1";
+    private static final String ARG_PARAM2 = "param2";
 
+    // TODO: Rename and change types of parameters
+    private String mParam1;
+    private String mParam2;
     private static String tipoTest;
     private static int pasoTest;
 
@@ -34,7 +38,7 @@ public class TestDaltonismo1 extends Fragment {
     Context ctx;
     DaltonProcs DPR;
 
-    public TestDaltonismo1() {
+    public TestDaltonismo4() {
         // Required empty public constructor
     }
 
@@ -43,13 +47,14 @@ public class TestDaltonismo1 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment TestDaltonismo1.
+     * @return A new instance of fragment TestDaltonismo3.
      */
-    public static TestDaltonismo1 newInstance(String param1, int param2) {
-        TestDaltonismo1 fragment = new TestDaltonismo1();
+    // TODO: Rename and change types and number of parameters
+    public static TestDaltonismo4 newInstance(String param1, String param2) {
+        TestDaltonismo4 fragment = new TestDaltonismo4();
         Bundle args = new Bundle();
-        args.putString(ARG_TIPO_TEST, param1);
-        args.putInt(ARG_PASO_TEST, param2);
+        args.putString(ARG_PARAM1, param1);
+        args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -58,10 +63,10 @@ public class TestDaltonismo1 extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         tipoTest = "BAS";
-        pasoTest = 1;
+        pasoTest = 4;
         if (getArguments() != null) {
-            tipoTest = getArguments().getString(ARG_TIPO_TEST);
-            pasoTest = getArguments().getInt(ARG_PASO_TEST);
+            mParam1 = getArguments().getString(ARG_PARAM1);
+            mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -69,17 +74,7 @@ public class TestDaltonismo1 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         ctx = getActivity();
-        View vista = inflater.inflate(R.layout.test_frag_daltonismo1, container, false);
-
-        Test TD1 = new Test(ctx);
-        TD1.setIdTest(4);
-        TD1.setNombre("Daltonismo Básico");
-        TD1.setCantidadPasos(3);
-        TD1.insertar();
-
-        TD1.buscar(2);
-        TD1.setCantidadPasos(6);
-        TD1.modificar();
+        View vista = inflater.inflate(R.layout.test_frag_daltonismo4, container, false);
 
         DPR = new DaltonProcs(ctx);
         pb1 = (ProgressBar) vista.findViewById(R.id.progressBarTD1);
@@ -100,19 +95,14 @@ public class TestDaltonismo1 extends Fragment {
         boton2.setText(DPR.botones[1]);
         boton3.setText(DPR.botones[2]);
         pb1.setProgress(pasoTest*33, true);
-        pasoTest = pasoTest + 1;
-        DPR.TDRespuestas[0] = -1;
-        DPR.TDRespuestas[1] = -1;
-        DPR.TDRespuestas[2] = -1;
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int respuesta = Integer.parseInt((String) v.getTag());
                 Log.d("DALTON", "TD1 = "+String.valueOf(respuesta));
-                DPR.TDRespuestas[0] = respuesta;
-                // androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_testDaltonismo1_self);
-                androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_testDaltonismo1_to_testDaltonismo2);
+                DPR.TDRespuestas[3] = respuesta;
+                androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_testDaltonismo4_to_testDaltonismoR);
             }
         };
         boton1.setOnClickListener(listener);

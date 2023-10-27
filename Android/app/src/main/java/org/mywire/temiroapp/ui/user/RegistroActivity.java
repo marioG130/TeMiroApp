@@ -10,9 +10,7 @@ import android.widget.Toast;
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.model.User;
 import org.mywire.temiroapp.util.GenericRequest;
-
 import java.util.Random;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -77,7 +75,6 @@ public class RegistroActivity extends AppCompatActivity {
         Random random = new Random();
         return random.nextInt(2000);
     }
-
 
     public boolean validar() {
         boolean retorno = true;

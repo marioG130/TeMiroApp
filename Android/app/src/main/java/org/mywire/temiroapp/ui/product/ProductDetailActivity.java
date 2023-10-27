@@ -44,7 +44,6 @@ public class ProductDetailActivity extends AppCompatActivity {
                     .build();
 
             ProductService productService = retrofit.create(ProductService.class);
-
             Call<Product> call = productService.getProductById(productId);
             call.enqueue(new Callback<Product>() {
                 @Override
@@ -72,12 +71,11 @@ public class ProductDetailActivity extends AppCompatActivity {
 
                 @Override
                 public void onFailure(Call<Product> call, Throwable t) {
-
                     Toast.makeText(ProductDetailActivity.this, "Error de red", Toast.LENGTH_SHORT).show();
                 }
             });
         } else {
-
+            Toast.makeText(ProductDetailActivity.this, "Producto incorrecto !", Toast.LENGTH_LONG).show();
         }
     }
 

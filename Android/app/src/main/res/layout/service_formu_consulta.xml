@@ -1,69 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".ui.product.ProductDetailActivity"
+    tools:ignore="ExtraText">
 
-
-    <TextView
+    <fragment
+        android:id="@+id/topmenu"
+        android:name="org.mywire.temiroapp.ui.main.TopMenuFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Formulario de Consulta"
-        android:textSize="24sp"
-        android:gravity="center"
-        android:layout_marginBottom="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/main_frag_top_menu"></fragment>
 
-
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Apellido"
-        android:id="@+id/etApellido"
-        android:layout_marginBottom="12dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Consulta"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nombre"
-        android:id="@+id/etNombre"
-        android:layout_marginBottom="12dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:id="@+id/etApellido"
+            android:layout_marginBottom="12dp" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:id="@+id/etNombre"
+            android:layout_marginBottom="12dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Email"
-        android:id="@+id/etEmail"
-        android:inputType="textEmailAddress"
-        android:layout_marginBottom="12dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:id="@+id/etEmail"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp" />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:id="@+id/etTelefono"
+            android:inputType="phone"
+            android:layout_marginBottom="12dp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Teléfono"
-        android:id="@+id/etTelefono"
-        android:inputType="phone"
-        android:layout_marginBottom="12dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Consulta"
+            android:id="@+id/etConsulta"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp" />
 
+        <Button
+            android:id="@+id/btnEnviar"
+            style="@style/botonesMenu"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/buttonColor"
+            android:text="Enviar" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Consulta"
-        android:id="@+id/etConsulta"
-        android:inputType="textMultiLine"
-        android:layout_marginBottom="16dp" />
-
-
-    <Button
-        android:id="@+id/btnEnviar"
-        style="@style/botonesMenu"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/buttonColor"
-        android:text="Enviar" />
+    </LinearLayout>
 
 </LinearLayout>
