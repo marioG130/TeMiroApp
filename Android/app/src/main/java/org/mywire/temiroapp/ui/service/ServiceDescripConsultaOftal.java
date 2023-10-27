@@ -11,10 +11,10 @@ import org.mywire.temiroapp.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Service_descrip_consulta_oftal#newInstance} factory method to
+ * Use the {@link ServiceDescripConsultaOftal#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Service_descrip_consulta_oftal extends Fragment {
+public class ServiceDescripConsultaOftal extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,7 +25,7 @@ public class Service_descrip_consulta_oftal extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Service_descrip_consulta_oftal() {
+    public ServiceDescripConsultaOftal() {
         // Required empty public constructor
     }
 
@@ -38,8 +38,8 @@ public class Service_descrip_consulta_oftal extends Fragment {
      * @return A new instance of fragment Service_descrip_consulta_oftal.
      */
     // TODO: Rename and change types and number of parameters
-    public static Service_descrip_consulta_oftal newInstance(String param1, String param2) {
-        Service_descrip_consulta_oftal fragment = new Service_descrip_consulta_oftal();
+    public static ServiceDescripConsultaOftal newInstance(String param1, String param2) {
+        ServiceDescripConsultaOftal fragment = new ServiceDescripConsultaOftal();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -68,7 +68,6 @@ public class Service_descrip_consulta_oftal extends Fragment {
                 ViewKt.findNavController(view) .navigate(R.id.action_service_descrip_consulta_oftal_to_service_Formu_Consulta);
             }
         });
-
         return vista;
     }
 

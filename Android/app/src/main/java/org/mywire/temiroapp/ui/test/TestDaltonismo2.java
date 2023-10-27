@@ -3,6 +3,7 @@ package org.mywire.temiroapp.ui.test;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import org.mywire.temiroapp.R;
+import org.mywire.temiroapp.data.prefs.PreferencesHelper;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -34,7 +36,7 @@ public class TestDaltonismo2 extends Fragment {
     Button boton3;
     ProgressBar pb1;
     Context ctx;
-    DaltonProcs DUT;
+    DaltonProcs DPR;
 
     public TestDaltonismo2() {
         // Required empty public constructor
@@ -74,30 +76,32 @@ public class TestDaltonismo2 extends Fragment {
         ctx = getActivity();
         View vista = inflater.inflate(R.layout.test_frag_daltonismo2, container, false);
 
-        DUT = new DaltonProcs(ctx);
+        DPR = new DaltonProcs(ctx);
         pb1 = (ProgressBar) vista.findViewById(R.id.progressBarTD1);
         placa = (ImageView) vista.findViewById(R.id.imagePlaca);
         boton1 = (Button) vista.findViewById(R.id.button1);
         boton2 = (Button) vista.findViewById(R.id.button2);
         boton3 = (Button) vista.findViewById(R.id.button3);
 
+        PreferencesHelper prefs = new PreferencesHelper(ctx);
+        tipoTest = prefs.getTipoDalton1();
         if (tipoTest.equals("BAS")) {
-            DUT.cargarPasoBasico(pasoTest);
-            DUT.colocarImagen(placa);
-            boton1.setText(DUT.botones[0]);
-            boton2.setText(DUT.botones[1]);
-            boton3.setText(DUT.botones[2]);
-            pb1.setProgress(pasoTest*33, true);
+            DPR.cargarPasoBasico(pasoTest);
         } else if (tipoTest.equals("ADV")) {
-            DUT.cargarPasoAvanzado(pasoTest);
-            DUT.colocarImagen(placa);
-            // TODO: completar
+            DPR.cargarPasoAvanzado(pasoTest);
         }
+        DPR.colocarImagen(placa);
+        boton1.setText(DPR.botones[0]);
+        boton2.setText(DPR.botones[1]);
+        boton3.setText(DPR.botones[2]);
+        pb1.setProgress(pasoTest*33, true);
 
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // int respuesta = (int) v.getTag();
+                int respuesta = Integer.parseInt((String) v.getTag());
+                Log.d("DALTON", "TD2 = "+String.valueOf(respuesta));
+                DPR.TDRespuestas[1] = respuesta;
                 androidx.navigation.Navigation.findNavController(v).navigate(R.id.action_testDaltonismo2_to_testDaltonismo3);
             }
         };

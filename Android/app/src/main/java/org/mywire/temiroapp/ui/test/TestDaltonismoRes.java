@@ -1,12 +1,14 @@
 package org.mywire.temiroapp.ui.test;
 
+import android.content.Context;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 import org.mywire.temiroapp.R;
+import org.mywire.temiroapp.data.prefs.PreferencesHelper;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,18 +16,16 @@ import org.mywire.temiroapp.R;
  */
 public class TestDaltonismoRes extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    private static final String ARG_TIPO_TEST = "ARG_TIPO_TEST";
+    private static final String ARG_PASO_TEST = "ARG_PASO_TEST";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private static String tipoTest;
+    private static int pasoTest;
 
-    Button boton1;
-    Button boton2;
-    Button boton3;
+    TextView resultado1;
+    TextView resultado2;
+    Context ctx;
+    DaltonProcs DPR;
 
     public TestDaltonismoRes() {
         // Required empty public constructor
@@ -39,11 +39,11 @@ public class TestDaltonismoRes extends Fragment {
      * @return A new instance of fragment TestDaltonismo4.
      */
     // TODO: Rename and change types and number of parameters
-    public static TestDaltonismoRes newInstance(String param1, String param2) {
+    public static TestDaltonismoRes newInstance(String param1, int param2) {
         TestDaltonismoRes fragment = new TestDaltonismoRes();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putString(ARG_TIPO_TEST, param1);
+        args.putInt(ARG_PASO_TEST, param2);
         fragment.setArguments(args);
         return fragment;
     }
@@ -51,15 +51,48 @@ public class TestDaltonismoRes extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        tipoTest = "BAS";
+        pasoTest = 1;
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            tipoTest = getArguments().getString(ARG_TIPO_TEST);
+            pasoTest = getArguments().getInt(ARG_PASO_TEST);
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+        ctx = getActivity();
         View vista = inflater.inflate(R.layout.test_frag_daltonismo_res, container, false);
+        resultado1 = (TextView) vista.findViewById(R.id.textResuD1);
+        resultado2 = (TextView) vista.findViewById(R.id.textResuD2);
+
+        PreferencesHelper prefs = new PreferencesHelper(ctx);
+        tipoTest = prefs.getTipoDalton1();
+        DPR = new DaltonProcs(ctx);
+        boolean todasBien = true;
+        if (tipoTest.equals("BAS")) {
+            for (int i=1; i<=3; i++) {
+                DPR.cargarPasoBasico(i);
+                if (DPR.TDRespuestas[i-1] != DPR.botonCorrecto) {
+                    todasBien = false;
+                }
+            }
+        } else if (tipoTest.equals("ADV")) {
+            for (int i=1; i<=4; i++) {
+                DPR.cargarPasoAvanzado(i);
+                if (DPR.TDRespuestas[i-1] != DPR.botonCorrecto) {
+                    todasBien = false;
+                }
+            }
+        }
+        if (todasBien) {
+            resultado1.setText("Felicitaciones !");
+            resultado2.setText("Su visión de colores es normal");
+        } else {
+            resultado1.setText("Oops !");
+            resultado2.setText("Ud. tiene problemas para ver algunos colores");
+        }
         return vista;
     }
 

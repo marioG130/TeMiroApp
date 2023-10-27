@@ -84,7 +84,7 @@ public class ServicePpal extends Fragment {
                 findNavController(view) .navigate(R.id.action_servicePpal_to_service_descrip_consulta_oftal);
             }
         });
-
         return vista;
     }
+
 }

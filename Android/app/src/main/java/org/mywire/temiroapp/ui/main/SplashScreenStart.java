@@ -25,4 +25,5 @@ public class SplashScreenStart extends AppCompatActivity {
         Timer tiempo = new Timer();
         tiempo.schedule(tarea, 3000);
     }
+
 }

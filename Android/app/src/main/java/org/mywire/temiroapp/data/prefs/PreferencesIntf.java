@@ -11,4 +11,7 @@ public interface PreferencesIntf {
     int getIdUsuario();
     void setIdUsuario(int id);
 
+    String getTipoDalton1();
+    void setTipoDalton1(String nombre);
+
 }

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.test.TestDaltonismoRes">
+    tools:context=".ui.test.TestDaltonismo4">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="El test de Daltonismo ha finalizado."
+            android:text="Elegir la opción que mejor refleje lo que está viendo. Elija de forma instintiva sin pensar demasiado."
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -34,28 +34,18 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:max="100"
-            android:progress="100"
+            android:progress="80"
             android:scrollbarSize="8dp" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <TextView
-            android:id="@+id/textResuD1"
+        <ImageView
+            android:id="@+id/imagePlaca"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Felicitaciones !"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-        <TextView
-            android:id="@+id/textResuD2"
-            android:layout_width="match_parent"
-            android:layout_height="86dp"
-            android:text="Su visión de colores es normal"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:src="@drawable/test_placa_uk" />
 
         <Space
             android:layout_width="match_parent"
@@ -64,12 +54,40 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"/>
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/botonesOpcion"
+                android:layout_weight="1"
+                android:tag="1"
+                android:text="2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/botonesOpcion"
+                android:layout_weight="1"
+                android:tag="2"
+                android:text="6"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"/>
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/botonesOpcion"
+                android:layout_weight="1"
+                android:tag="3"
+                android:text="NADA"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        </LinearLayout>
     </LinearLayout>
 
 </FrameLayout>

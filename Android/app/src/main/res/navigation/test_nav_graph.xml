@@ -74,6 +74,18 @@
         <action
             android:id="@+id/action_testDaltonismo3_to_testDaltonismoR"
             app:destination="@id/testDaltonismoR" />
+        <action
+            android:id="@+id/action_testDaltonismo3_to_testDaltonismo4"
+            app:destination="@id/testDaltonismo4" />
+    </fragment>
+    <fragment
+        android:id="@+id/testDaltonismo4"
+        android:name="org.mywire.temiroapp.ui.test.TestDaltonismo4"
+        android:label="test_frag_daltonismo4"
+        tools:layout="@layout/test_frag_daltonismo4" >
+        <action
+            android:id="@+id/action_testDaltonismo4_to_testDaltonismoR"
+            app:destination="@id/testDaltonismoR" />
     </fragment>
 
 </navigation>

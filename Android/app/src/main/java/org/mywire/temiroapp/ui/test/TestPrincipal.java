@@ -26,6 +26,12 @@ public class TestPrincipal extends AppCompatActivity {
         esUsuarioRegistrado = prefs.isUsuarioRegistrado();
         nombreUsuario = prefs.getNombreUsuario();
         idUsuario = prefs.getIdUsuario();
+
+        if (esUsuarioRegistrado) {
+            prefs.setTipoDalton1("ADV");  // Test Avanzado
+        } else {
+            prefs.setTipoDalton1("BAS");  // Test Basico
+        }
     }
 
 }

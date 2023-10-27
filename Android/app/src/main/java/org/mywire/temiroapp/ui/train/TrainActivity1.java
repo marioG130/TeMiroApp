@@ -8,10 +8,13 @@ import android.widget.TextView;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import org.mywire.temiroapp.R;
+import org.mywire.temiroapp.ui.user.LoginActivity;
+import org.mywire.temiroapp.data.prefs.PreferencesHelper;
 import android.net.Uri;
 import android.widget.VideoView;
 
 public class TrainActivity1 extends AppCompatActivity {
+
     boolean esUsuarioRegistrado;
     String nombreUsuario;
     int idUsuario;
@@ -24,7 +27,6 @@ public class TrainActivity1 extends AppCompatActivity {
     private TextView mensajeMovimiento;
     private VideoView videoView;
     private TextView descripcionTextView;
-    
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,14 +41,20 @@ public class TrainActivity1 extends AppCompatActivity {
         mensajeMovimiento = findViewById(R.id.mensajeMovimiento);
         videoView = findViewById(R.id.videoView);
         descripcionTextView = findViewById(R.id.descripcionTextView);
+        descripcionTextView.setText("");
+        ocultarMensajes();
 
-        Button loginButton = findViewById(R.id.loginButton);
-        Button registroButton = findViewById(R.id.registroButton);
+        // Recupera valores desde las preferencias
+        PreferencesHelper prefs = new PreferencesHelper(this);
+        esUsuarioRegistrado = prefs.isUsuarioRegistrado();
+        nombreUsuario = prefs.getNombreUsuario();
+        idUsuario = prefs.getIdUsuario();
 
         parpadeoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validar()) {
+                ocultarMensajes();
+                if (esUsuarioRegistrado) {
                     // Mostrar el video de Parpadeo
                     mensajeParpadeo.setVisibility(View.VISIBLE);
                     descripcionTextView.setText(getString(R.string.descripcion_parpadeo));
@@ -55,6 +63,7 @@ public class TrainActivity1 extends AppCompatActivity {
                     videoView.setVideoURI(Uri.parse(videoUrlParpadeo));
                     videoView.start();
                 } else {
+                    Toast.makeText(TrainActivity1.this, "Solo disponible para usuarios registrados !", Toast.LENGTH_LONG).show();
                     // Redirigir al usuario a la actividad de inicio de sesión
                     Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
                     startActivity(intent);
@@ -65,7 +74,8 @@ public class TrainActivity1 extends AppCompatActivity {
         cuerdaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validar()) {
+                ocultarMensajes();
+                if (esUsuarioRegistrado) {
                     // Mostrar el video de Cuerda
                     mensajeCuerda.setVisibility(View.VISIBLE);
                     descripcionTextView.setText(getString(R.string.descripcion_cuerda));
@@ -74,6 +84,7 @@ public class TrainActivity1 extends AppCompatActivity {
                     videoView.setVideoURI(Uri.parse(videoUrlCuerda));
                     videoView.start();
                 } else {
+                    Toast.makeText(TrainActivity1.this, "Solo disponible para usuarios registrados !", Toast.LENGTH_LONG).show();
                     // Redirigir al usuario a la actividad de inicio de sesión
                     Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
                     startActivity(intent);
@@ -84,7 +95,8 @@ public class TrainActivity1 extends AppCompatActivity {
         movimientoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (validar()) {
+                ocultarMensajes();
+                if (esUsuarioRegistrado) {
                     // Mostrar el video de Movimiento
                     mensajeMovimiento.setVisibility(View.VISIBLE);
                     descripcionTextView.setText(getString(R.string.descripcion_movimiento));
@@ -93,30 +105,19 @@ public class TrainActivity1 extends AppCompatActivity {
                     videoView.setVideoURI(Uri.parse(videoUrlMovimiento));
                     videoView.start();
                 } else {
+                    Toast.makeText(TrainActivity1.this, "Solo disponible para usuarios registrados !", Toast.LENGTH_LONG).show();
                     // Redirigir al usuario a la actividad de inicio de sesión
                     Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
                     startActivity(intent);
                 }
             }
         });
+    }
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Redirigir al usuario a la actividad de inicio de sesión
-                Intent intent = new Intent(TrainActivity1.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        registroButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Redirigir al usuario a la actividad de registro
-                Intent intent = new Intent(TrainActivity1.this, RegistroActivity.class);
-                startActivity(intent);
-            }
-        });
+    void ocultarMensajes() {
+        mensajeParpadeo.setVisibility(View.INVISIBLE);
+        mensajeCuerda.setVisibility(View.INVISIBLE);
+        mensajeMovimiento.setVisibility(View.INVISIBLE);
     }
 
     @Override
@@ -133,7 +134,4 @@ public class TrainActivity1 extends AppCompatActivity {
         videoView.stopPlayback();
     }
 
-   /* private boolean validar() {
-        return usuarioHaIniciadoSesion;
-    } */
 }
