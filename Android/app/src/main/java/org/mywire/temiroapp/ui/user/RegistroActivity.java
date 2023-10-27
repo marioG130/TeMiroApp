@@ -11,6 +11,8 @@ import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.model.User;
 import org.mywire.temiroapp.util.GenericRequest;
 
+import java.util.Random;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -46,7 +48,7 @@ public class RegistroActivity extends AppCompatActivity {
         user.setUsuario(editTextNomUs.getText().toString());
         user.setEmail(editTextTextEmailAddress.getText().toString());
         user.setPassword(editTextTextPassword.getText().toString());
-        user.getIdusuario();
+        user.setIdusuario(generarId());
         return user;
     }
 
@@ -57,6 +59,8 @@ public class RegistroActivity extends AppCompatActivity {
             public void onResponse(Call<GenericRequest> call, Response<GenericRequest> response) {
                 if (response.isSuccessful()) {
                     Toast.makeText(RegistroActivity.this, "Registro exitoso", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(RegistroActivity.this, "Error de registro", Toast.LENGTH_LONG).show();
                 }
@@ -68,6 +72,12 @@ public class RegistroActivity extends AppCompatActivity {
             }
         });
     }
+
+    private int generarId(){
+        Random random = new Random();
+        return random.nextInt(2000);
+    }
+
 
     public boolean validar() {
         boolean retorno = true;
