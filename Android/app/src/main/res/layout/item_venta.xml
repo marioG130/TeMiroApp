@@ -6,15 +6,6 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="84dp"
-        android:contentDescription="logo de temiroapp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_logo" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -22,38 +13,23 @@
         android:layout_height="38dp"
         android:layout_margin="10dp"
         android:layout_marginTop="24dp"
-        android:gravity="center_vertical"
         android:orientation="horizontal"
         android:textAlignment="gravity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView">
 
-        <Button
-            android:id="@+id/botonVolverF"
-            android:layout_width="102dp"
-            android:layout_height="38dp"
-            android:layout_weight="1"
-            android:backgroundTint="@color/buttonColor"
-            android:insetBottom="4dp"
-            android:onClick="volverAMenu"
-            android:text="Volver"
-            android:textColor="@color/white"
-            app:iconPadding="8dp"
-            app:iconSize="18dp" />
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="271dp"
             android:layout_height="48dp"
-            android:layout_marginLeft="1dp"
             android:layout_weight="10"
             android:background="@color/white"
-            android:fontFamily="sans-serif-black"
             android:text="@string/mis_pedidos"
             android:textAlignment="center"
-            android:textColor="@color/buttonColor"
-            android:textSize="35dp"
+            android:textColor="@color/greydark"
+            android:textSize="18dp"
+            android:textStyle="bold"
             android:verticalScrollbarPosition="defaultPosition" />
 
     </LinearLayout>
@@ -81,5 +57,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Estado: Finalizada" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
 
 </LinearLayout>
