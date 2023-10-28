@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">TeMiroApp</string>
-    <string name="mis_pedidos">Mis Pedidos</string>
+    <string name="mis_pedidos">Detalle de compra</string>
     <string name="no_implementado">No Implementado !</string>
     <string name="volver">Volver</string>
     <string name="daltonismo">Daltonismo</string>

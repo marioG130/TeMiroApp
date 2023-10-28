@@ -1,10 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/botonVolverF"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="boton para volver a la pantalla anterior"
+            android:onClick="volverStoreToHome"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/main_back_button_icon" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/main_logo" />
+
+
+    </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

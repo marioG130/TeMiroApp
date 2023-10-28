@@ -1,13 +1,16 @@
 package org.mywire.temiroapp.ui.store;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
 import org.mywire.temiroapp.data.prefs.PreferencesHelper;
 import org.mywire.temiroapp.data.remote.ApiService;
@@ -67,5 +70,10 @@ public class StoreActivity extends AppCompatActivity {
                 Log.e("StoreActivity", "Error en la solicitud de ventas: " + t.getMessage());
             }
         });
+    }
+
+    public void volverStoreToHome(View view) {
+        Intent act = new Intent(this, MainActivity.class);
+        startActivity(act);
     }
 }
