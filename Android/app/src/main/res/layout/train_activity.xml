@@ -43,11 +43,11 @@
 
         <Button
             android:id="@+id/cuerdaButton"
+            style="@style/botonesMenu"
+            android:layout_below="@+id/parpadeoButton"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
-            android:layout_below="@+id/parpadeoButton"
-            android:text="Cuerda de Brock"
-            style="@style/botonesMenu" />
+            android:text="Enfoque" />
 
         <Button
             android:id="@+id/movimientoButton"

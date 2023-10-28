@@ -31,7 +31,6 @@ public class TurneroActivity extends AppCompatActivity {
         Button btnReservar = findViewById(R.id.btnReservar);
         btnReservar.setOnClickListener(v -> {
             String temaCita = editTextTema.getText().toString();
-
             if (validarFechaHora() && !temaCita.isEmpty()) {
                 guardarReserva(temaCita);
                 Toast.makeText(TurneroActivity.this, "Reserva guardada", Toast.LENGTH_SHORT).show();

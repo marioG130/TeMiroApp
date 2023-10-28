@@ -78,10 +78,10 @@ public class TrainActivity1 extends AppCompatActivity {
                 if (esUsuarioRegistrado) {
                     // Mostrar el video de Cuerda
                     mensajeCuerda.setVisibility(View.VISIBLE);
-                    descripcionTextView.setText(getString(R.string.descripcion_cuerda));
+                    descripcionTextView.setText(getString(R.string.descripcion_enfoque));
                     // Reemplaza "videoUrlCuerda" por la URL correcta del video
-                    String videoUrlCuerda = "http://temiro.mywire.org:8000/media/video/enfoque_1.mp4";
-                    videoView.setVideoURI(Uri.parse(videoUrlCuerda));
+                    String videoUrlEnfoque = "http://temiro.mywire.org:8000/media/video/enfoque_1.mp4";
+                    videoView.setVideoURI(Uri.parse(videoUrlEnfoque));
                     videoView.start();
                 } else {
                     Toast.makeText(TrainActivity1.this, "Solo disponible para usuarios registrados !", Toast.LENGTH_LONG).show();

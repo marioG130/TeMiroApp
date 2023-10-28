@@ -7,7 +7,7 @@
     <string name="agudeza_visual">Agudeza Visual</string>
     <string name="distancia_pupilar">Distancia Pupilar</string>
     <string name="descripcion_parpadeo">Ejercicio de Parpadeo: Su objetivo es mejorar la lubricación del ojo, reducir la sequedad ocular y disminuir los síntomas de la fatiga visual.</string>
-    <string name="descripcion_cuerda">Ejercicio de Cuerda de Brock: Su objetivo principal es mejorar la coordinación binocular, un término que se refiere a la forma en que nuestros dos ojos trabajan juntos para enfocar y seguir objetos.</string>
+    <string name="descripcion_enfoque">Ejercicio Enfoque Lejos-Cerca: En este ejercicio se trabaja la convergencia, divergencia y acomodación. Involucra mirar a muy cortas distancias y a muy lejanas de forma alternada.</string>
     <string name="descripcion_movimiento">Ejercicio de Movimientos Oculares: Su objetivo es tonificar a los músculos de los ojos. Reducen el cansancio y aumentan la velocidad.</string>
     <string name="hello_blank_fragment">Blank fragment</string>
 </resources>
