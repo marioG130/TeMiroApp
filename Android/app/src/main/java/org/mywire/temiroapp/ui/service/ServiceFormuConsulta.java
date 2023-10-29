@@ -1,10 +1,16 @@
 package org.mywire.temiroapp.ui.service;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import org.mywire.temiroapp.MainActivity;
 import org.mywire.temiroapp.R;
 
 /**
@@ -57,8 +63,42 @@ public class ServiceFormuConsulta extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.service_formu_consulta, container, false);
+        View view = inflater.inflate(R.layout.service_formu_consulta, container, false);
+
+
+        Button btnEnviar = view.findViewById(R.id.btnEnviar);
+        btnEnviar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (areFieldsValid()) {
+                    Toast.makeText(getContext(), "Mensaje enviado", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
+                    startActivity(intent);
+                } else {
+
+                    Toast.makeText(getContext(), "Todos los campos son obligatorios", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        return view;
     }
 
+    private boolean areFieldsValid() {
+        EditText etApellido = getView().findViewById(R.id.etApellido);
+        EditText etNombre = getView().findViewById(R.id.etNombre);
+        EditText etEmail = getView().findViewById(R.id.etEmail);
+        EditText etTelefono = getView().findViewById(R.id.etTelefono);
+        EditText etConsulta = getView().findViewById(R.id.etConsulta);
+
+        if (etApellido.getText().toString().trim().isEmpty() ||
+                etNombre.getText().toString().trim().isEmpty() ||
+                etEmail.getText().toString().trim().isEmpty() ||
+                etTelefono.getText().toString().trim().isEmpty() ||
+                etConsulta.getText().toString().trim().isEmpty()) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
+
