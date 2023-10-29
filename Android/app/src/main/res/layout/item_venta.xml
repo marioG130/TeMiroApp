@@ -28,7 +28,7 @@
             android:text="@string/mis_pedidos"
             android:textAlignment="center"
             android:textColor="@color/greydark"
-            android:textSize="18dp"
+            android:textSize="22dp"
             android:textStyle="bold"
             android:verticalScrollbarPosition="defaultPosition" />
 
@@ -38,24 +38,28 @@
         android:id="@+id/txtIdVenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:text="ID Venta: 1" />
 
     <TextView
         android:id="@+id/txtDescripcion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:text="Descripción: Bifocales" />
 
     <TextView
         android:id="@+id/txtFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:text="Fecha: 2023-10-21" />
 
     <TextView
         android:id="@+id/txtEstado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20dp"
         android:text="Estado: Finalizada" />
 
     <View

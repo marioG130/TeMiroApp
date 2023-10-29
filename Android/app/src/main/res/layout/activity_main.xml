@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@drawable/main_icon_usuario"
-        android:contentDescription="Icono de usuario para acceder a la configuración de perfil"/>
+        android:contentDescription="@string/icono_user_descripcion"/>
 
     <TextView
         android:id="@+id/textoBienvenido"
@@ -141,6 +141,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.127"
-        android:contentDescription="Logo de la aplicación TeMiro APP"/>
+        android:contentDescription="@string/logo_app_descripcion"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

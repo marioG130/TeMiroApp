@@ -13,7 +13,7 @@
         android:layout_height="380dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/service_lentesrotos"
-        android:contentDescription="Foto de un par de lentes con una pata y un cristal rotos"/>
+        android:contentDescription="@string/foto_seguro_descripcion"/>
 
     <!-- Descripción del servicio -->
 

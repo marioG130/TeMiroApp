@@ -33,7 +33,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_logo" />
+        app:srcCompat="@drawable/main_logo"
+        android:contentDescription="@string/logo_app_descripcion"/>
 
     <TextView
         android:id="@+id/textoConsultaEnviada"
@@ -62,10 +63,10 @@
     <ImageView
         android:id="@+id/imagenConsultaEnviada"
         android:layout_width="280dp"
-        android:layout_height="358dp"
-        android:layout_marginTop="244dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="260dp"
+        android:contentDescription="@string/contacto_enviado_descrpcion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/main_icon_consulta_enviada" />

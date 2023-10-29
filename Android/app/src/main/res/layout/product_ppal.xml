@@ -16,7 +16,7 @@
             android:id="@+id/imageView"
             android:layout_width="233dp"
             android:layout_height="84dp"
-            android:contentDescription="logo de temiroapp"
+            android:contentDescription="@string/logo_app_descripcion"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -46,7 +46,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/main_back_button_icon"
-                android:contentDescription="Botón para volver a la pantalla anterior"/>
+                android:contentDescription="@string/boton_volver_descrpcion"/>
 
             <TextView
                 android:id="@+id/textView3"

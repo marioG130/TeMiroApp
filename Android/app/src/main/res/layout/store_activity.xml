@@ -19,7 +19,7 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_marginTop="4dp"
-            android:contentDescription="boton para volver a la pantalla anterior"
+            android:contentDescription="@string/boton_volver_descrpcion"
             android:onClick="volverStoreToHome"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -32,7 +32,8 @@
             android:layout_width="302dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/main_logo" />
+            android:src="@drawable/main_logo"
+            android:contentDescription="@string/logo_app_descripcion"/>
 
 
     </LinearLayout>
