@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:src="@drawable/service_taller"
         android:layout_gravity="center_horizontal"
-        android:contentDescription="Foto de varias herramientas y máquinas de un laboratorio oftalmológico"/>
+        android:contentDescription="@string/foto_taller_descripcion"/>
 
     <!-- Descripción del servicio -->
     <TextView

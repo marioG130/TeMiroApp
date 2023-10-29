@@ -19,7 +19,7 @@
         <ImageButton
             android:id="@+id/backButton"
             style="@style/botonesTop"
-            android:contentDescription="@string/volver"
+            android:contentDescription="@string/boton_volver_descrpcion"
             android:src="@drawable/main_back_button_icon"
             />
 
@@ -29,7 +29,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/main_logo"
-            android:contentDescription="Logo de la aplicación TeMiro APP"/>
+            android:contentDescription="@string/logo_app_descripcion"/>
 
     </LinearLayout>
 

@@ -48,7 +48,7 @@ public class VentaAdapter extends RecyclerView.Adapter<VentaAdapter.ViewHolder> 
         }
 
         public void bind(Venta venta) {
-            txtIdVenta.setText("ID Venta: " + String.valueOf(venta.getIdventa()));
+            txtIdVenta.setText("Numero de compra: " + String.valueOf(venta.getIdventa()));
             txtDescripcion.setText("Descripción: " + venta.getDescripcion());
         }
     }

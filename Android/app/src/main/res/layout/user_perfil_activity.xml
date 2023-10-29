@@ -25,7 +25,7 @@
             android:layout_marginTop="30dp"
             android:scaleType="fitCenter"
             android:src="@drawable/main_icon_usuario"
-            android:contentDescription="Imagen de perfil de usuario"/>
+            android:contentDescription="@string/imagen_perfil_descripcion"/>
 
         <TextView
             android:id="@+id/textView10"
@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        android:contentDescription="botón para ir a la pantalla Inicio"/>
+        android:contentDescription="@string/boton_volver_descrpcion"/>
 
     <LinearLayout
         android:layout_width="wrap_content"

@@ -23,7 +23,7 @@
             <ImageView
                 android:layout_width="170dp"
                 android:layout_height="170dp"
-                android:contentDescription="Categoría 1"
+                android:contentDescription="@string/foto_taller_descripcion"
                 android:src="@drawable/service_taller"
                 />
 
@@ -48,7 +48,7 @@
             <ImageView
                 android:layout_width="170dp"
                 android:layout_height="170dp"
-                android:contentDescription="Categoría 2"
+                android:contentDescription="@string/foto_seguro_descripcion"
                 android:src="@drawable/service_lentesrotos" />
 
             <Button
@@ -72,7 +72,7 @@
             <ImageView
                 android:layout_width="170dp"
                 android:layout_height="170dp"
-                android:contentDescription="Categoría 3"
+                android:contentDescription="@string/foto_examen_descripcion"
                 android:src="@drawable/service_examenvisual" />
 
             <Button

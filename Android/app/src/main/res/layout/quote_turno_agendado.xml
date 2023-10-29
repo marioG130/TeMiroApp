@@ -85,7 +85,7 @@
     <ImageView
         android:id="@+id/imagenCalendarioReservado"
         android:layout_width="220dp"
-        android:layout_height="232dp"
+        android:layout_height="210dp"
         android:layout_marginBottom="190dp"
         android:src="@drawable/quote_reserva_hecha"
         app:layout_constraintBottom_toBottomOf="parent"
