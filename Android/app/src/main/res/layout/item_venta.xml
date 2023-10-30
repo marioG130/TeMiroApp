@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="347dp"
+        android:layout_height="38dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="271dp"
+            android:layout_height="48dp"
+            android:layout_weight="10"
+            android:background="@color/white"
+            android:text="@string/mis_pedidos"
+            android:textAlignment="center"
+            android:textColor="@color/greydark"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:verticalScrollbarPosition="defaultPosition" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtIdVenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="ID Venta: 1" />
+
+    <TextView
+        android:id="@+id/txtDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Descripción: Bifocales" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Fecha: 2023-10-21" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Estado: Finalizada" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

@@ -1,10 +1,23 @@
 <resources>
     <string name="app_name">TeMiroApp</string>
-    <string name="mis_pedidos">Mis Pedidos</string>
+    <string name="mis_pedidos">Detalle de compra</string>
     <string name="no_implementado">No Implementado !</string>
     <string name="volver">Volver</string>
     <string name="daltonismo">Daltonismo</string>
     <string name="agudeza_visual">Agudeza Visual</string>
     <string name="distancia_pupilar">Distancia Pupilar</string>
+    <string name="descripcion_parpadeo">Ejercicio de Parpadeo: Su objetivo es mejorar la lubricación del ojo, reducir la sequedad ocular y disminuir los síntomas de la fatiga visual.</string>
+    <string name="descripcion_enfoque">Ejercicio Enfoque Lejos-Cerca: En este ejercicio se trabaja la convergencia, divergencia y acomodación. Involucra mirar a muy cortas distancias y a muy lejanas de forma alternada.</string>
+    <string name="descripcion_movimiento">Ejercicio de Movimientos Oculares: Su objetivo es tonificar a los músculos de los ojos. Reducen el cansancio y aumentan la velocidad.</string>
     <string name="hello_blank_fragment">Blank fragment</string>
+    <string name="icono_user_descripcion">Icono de usuario para acceder a la configuración de perfil</string>
+    <string name="logo_app_descripcion">Logo de la aplicación TeMiro APP</string>
+    <string name="contacto_enviado_descrpcion">Imagen de un sobre enviando un mensaje</string>
+    <string name="boton_volver_descrpcion">Botón para volver a la pantalla anterior</string>
+    <string name="foto_taller_descripcion">Foto de varias herramientas y máquinas de un laboratorio oftalmológico</string>
+    <string name="foto_seguro_descripcion">Foto de un par de lentes de lectura con una pata y un cristal rotos</string>
+    <string name="foto_examen_descripcion">Foto de una mujer sonriente a la cual le están haciendo un examen oftalmológico</string>
+    <string name="fotoportada_login_descripcion">Foto portada de una mujer sonriente usando lentes de lectura</string>
+    <string name="imagen_perfil_descripcion">Imagen de perfil de usuario</string>
+
 </resources>

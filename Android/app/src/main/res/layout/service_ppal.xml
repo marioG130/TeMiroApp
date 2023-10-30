@@ -21,16 +21,19 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:contentDescription="Categoría 1"
-                android:src="@drawable/service_taller" />
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:contentDescription="@string/foto_taller_descripcion"
+                android:src="@drawable/service_taller"
+                />
 
             <Button
                 android:id="@+id/buttonCategoria1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/greydark"
+                android:textStyle="bold"
                 android:text="Taller De Montaje" />
         </LinearLayout>
 
@@ -43,9 +46,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:contentDescription="Categoría 2"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:contentDescription="@string/foto_seguro_descripcion"
                 android:src="@drawable/service_lentesrotos" />
 
             <Button
@@ -53,6 +56,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/greydark"
+                android:textStyle="bold"
                 android:text="Seguro Rotura De Cristal" />
         </LinearLayout>
 
@@ -65,9 +70,9 @@
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="150dp"
-                android:layout_height="109dp"
-                android:contentDescription="Categoría 3"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:contentDescription="@string/foto_examen_descripcion"
                 android:src="@drawable/service_examenvisual" />
 
             <Button
@@ -75,6 +80,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/buttonColor"
+                android:textColor="@color/greydark"
+                android:textStyle="bold"
                 android:text="Consultas Oftalmologicas" />
         </LinearLayout>
     </LinearLayout>

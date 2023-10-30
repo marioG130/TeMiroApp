@@ -21,7 +21,11 @@
         android:id="@+id/productView"
         android:name="org.mywire.temiroapp.ui.product.ProductView"
         android:label="fragment_product_view"
-        tools:layout="@layout/product_ppal" />
+        tools:layout="@layout/product_ppal" >
+        <action
+            android:id="@+id/action_productView_to_productDetailActivity"
+            app:destination="@id/productDetailActivity" />
+    </fragment>
     <fragment
         android:id="@+id/servicePpal"
         android:name="org.mywire.temiroapp.ui.service.ServicePpal"
@@ -39,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/service_descrip_taller"
-        android:name="org.mywire.temiroapp.ui.service.Service_descrip_taller"
+        android:name="org.mywire.temiroapp.ui.service.ServiceDescripTaller"
         android:label="fragment_service_descrip_taller"
         tools:layout="@layout/service_descrip_taller" >
         <action
@@ -48,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/service_descrip_seguro"
-        android:name="org.mywire.temiroapp.ui.service.service_descrip_seguro"
+        android:name="org.mywire.temiroapp.ui.service.ServiceDescripSeguro"
         android:label="fragment_service_descrip_seguro"
         tools:layout="@layout/service_descrip_seguro" >
         <action
@@ -57,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/service_descrip_consulta_oftal"
-        android:name="org.mywire.temiroapp.ui.service.Service_descrip_consulta_oftal"
+        android:name="org.mywire.temiroapp.ui.service.ServiceDescripConsultaOftal"
         android:label="fragment_service_descrip_consulta_oftal"
         tools:layout="@layout/service_descrip_consulta_oftal" >
         <action
@@ -66,7 +70,12 @@
     </fragment>
     <fragment
         android:id="@+id/service_Formu_Consulta"
-        android:name="org.mywire.temiroapp.ui.service.Service_Formu_Consulta"
+        android:name="org.mywire.temiroapp.ui.service.ServiceFormuConsulta"
         android:label="fragment_service__formu__consulta"
         tools:layout="@layout/service_formu_consulta" />
+    <fragment
+        android:id="@+id/productDetailActivity"
+        android:name="org.mywire.temiroapp.ui.product.ProductDetailActivity"
+        android:label="activity_product_detail"
+        tools:layout="@layout/product_detail" />
 </navigation>

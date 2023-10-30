@@ -4,67 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.quote.QuoteTurnero">
+    tools:context=".ui.quote.TurneroActivity">
 
-    <TextView
-        android:id="@+id/textoTurnero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="TURNERO"
-        android:textColor="@color/buttonColor"
-        android:textSize="34sp"
+    <EditText
+        android:id="@+id/editTextTema"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="28dp"
+        android:hint="TEMA DE LA CITA"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textoMuyPronto"
+        android:id="@+id/seleccionaFecha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:text="¡MUY PRONTO!"
-        android:textSize="24sp"
+        android:layout_marginTop="120dp"
+        android:text="Selecciona una Fecha"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        style="@android:style/Widget.DatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:minDate="11/01/2023"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <TextView
-        android:id="@+id/textoSeccionEnDesarrollo"
+        android:id="@+id/seleccionaHora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
-        android:text="SECCIÓN EN DESARROLLO"
-        android:textSize="24sp"
+        android:layout_marginTop="340dp"
+        android:text="Selecciona un Horario"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/imagenEnDesarrollo"
-        android:layout_width="292dp"
-        android:layout_height="430dp"
-        android:layout_marginTop="184dp"
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/quote_icon_en_desarrollo" />
+        app:layout_constraintVertical_bias="0.674" />
 
     <Button
-        android:id="@+id/botonVolverHomeTurnero"
-        android:layout_width="334dp"
-        android:layout_height="66dp"
-        android:layout_marginBottom="81dp"
-        android:backgroundTint="#16CAF0"
+        android:id="@+id/btnReservar"
+        style="@style/botonesMenu"
+        android:layout_marginBottom="116dp"
+        android:text="RESERVAR"
+        android:onClick="turnoReservar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnVolverHome"
+        style="@style/botonesMenu"
+        android:layout_marginBottom="35dp"
         android:text="VOLVER AL HOME"
-        android:textSize="24sp"
         android:onClick="volverAMenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

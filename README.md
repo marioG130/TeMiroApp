@@ -10,6 +10,6 @@ Se desarrolla una aplicación para Android para clientes de la Óptica y públic
 
 ## Negocio de la Optica "Temiro"
 
-[[Sitio web de la Óptica](http://temiro.mywire.org)]
+[[Sitio web de la Óptica](https://temiro.mywire.org)]
 
 ![optica](https://i.postimg.cc/6QpvKh4p/una-optica-negocio.jpg)

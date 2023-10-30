@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="volverHome"
     tools:context=".ui.user.LoginActivity">
 
     <LinearLayout
@@ -35,7 +34,8 @@
             android:layout_height="48dp"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="text"
+            android:contentDescription="Casilla para ingresar Nombre de usuario"/>
 
         <TextView
             android:id="@+id/textView_contrasena"
@@ -58,11 +58,10 @@
         <Button
             android:id="@+id/btn_InicioSesion"
             style="@style/botonesMenu"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:text="Ingresar"
-            android:textSize="24sp" />
+            android:onClick="iniciarSesion"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp" />
 
     </LinearLayout>
 
@@ -92,7 +91,8 @@
         android:scaleType="centerCrop"
         android:src="@drawable/user_img_login"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/fotoportada_login_descripcion"/>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -102,48 +102,52 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Img_login"
-        app:srcCompat="@drawable/main_logo" />
+        app:srcCompat="@drawable/main_logo"
+        android:contentDescription="@string/logo_app_descripcion"/>
 
     <TextView
         android:id="@+id/textView_IrRegistro"
         android:layout_width="102dp"
         android:layout_height="24dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="16dp"
         android:onClick="iniciarRegistro"
         android:text="  Regístrate"
-        android:textSize="16sp"
+        android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintVertical_bias="0.545"
+         />
 
     <TextView
         android:id="@+id/textView_pregunta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginTop="12dp"
         android:gravity="center|end"
         android:text="¿No tienes cuenta?"
-        android:textSize="16sp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/textView_IrRegistro"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.864"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
-        app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.333"
+         />
 
     <ImageView
-        android:id="@+id/btn_volverHome"
-        android:layout_width="40dp"
-        android:layout_height="43dp"
+        android:id="@+id/botonVolverF"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginTop="4dp"
+        android:onClick="volverHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="?attr/homeAsUpIndicator" />
-
+        app:srcCompat="@drawable/main_back_button_icon"
+        android:contentDescription="@string/boton_volver_descrpcion"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

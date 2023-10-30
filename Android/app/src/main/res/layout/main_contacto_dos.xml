@@ -33,7 +33,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/main_logo" />
+        app:srcCompat="@drawable/main_logo"
+        android:contentDescription="@string/logo_app_descripcion"/>
 
     <TextView
         android:id="@+id/textoConsultaEnviada"
@@ -62,22 +63,19 @@
     <ImageView
         android:id="@+id/imagenConsultaEnviada"
         android:layout_width="280dp"
-        android:layout_height="358dp"
-        android:layout_marginTop="244dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="260dp"
+        android:contentDescription="@string/contacto_enviado_descrpcion"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/main_icon_consulta_enviada" />
 
     <Button
         android:id="@+id/botonVolverHomeContacto"
-        android:layout_width="334dp"
-        android:layout_height="66dp"
+        style="@style/botonesMenu"
         android:layout_marginBottom="81dp"
-        android:backgroundTint="#16CAF0"
         android:text="VOLVER AL HOME"
-        android:textSize="24sp"
         android:onClick="volverAMenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

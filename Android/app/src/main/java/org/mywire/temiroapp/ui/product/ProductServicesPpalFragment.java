@@ -75,7 +75,7 @@ public class ProductServicesPpalFragment extends Fragment {
                 findNavController(view).navigate(R.id.action_productServicesPpalFragment_to_servicePpal);
             }
         });
-
         return vista;
     }
+
 }
